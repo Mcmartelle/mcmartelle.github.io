@@ -1,3 +1,3 @@
-# mcmartelle.github.io
+# www.martelle.dev
 
-[mcmartelle.github.io](https://mcmartelle.github.io)
+mdbook output for [www.martelle.dev](https://www.martelle.dev)
