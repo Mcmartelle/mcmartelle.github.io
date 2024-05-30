@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Work Experience - Matthew C. Martelle</title>
+        <title>DEML (DAG Elevation Markup Language) - Matthew C. Martelle</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html" class="active"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li class="chapter-item expanded "><a href="interact.html"><strong aria-hidden="true">2.2.</strong> InterAct</a></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="showyourwork.html"><strong aria-hidden="true">5.1.</strong> SHOW YOUR WORK cascading calculator</a></li><li class="chapter-item expanded "><a href="crepe_bordeaux.html"><strong aria-hidden="true">5.2.</strong> Crepe Bordeaux clipboard CLI tool</a></li><li class="chapter-item expanded "><a href="deml.html"><strong aria-hidden="true">5.3.</strong> DEML (DAG Elevation Markup Language)</a></li><li class="chapter-item expanded "><a href="visual_metronome.html"><strong aria-hidden="true">5.4.</strong> Visual Metronome</a></li><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.5.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="solunar_clock.html"><strong aria-hidden="true">5.6.</strong> Solunar Clock</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.7.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.8.</strong> Pixel Art</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li class="chapter-item expanded "><a href="interact.html"><strong aria-hidden="true">2.2.</strong> InterAct</a></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="showyourwork.html"><strong aria-hidden="true">5.1.</strong> SHOW YOUR WORK cascading calculator</a></li><li class="chapter-item expanded "><a href="crepe_bordeaux.html"><strong aria-hidden="true">5.2.</strong> Crepe Bordeaux clipboard CLI tool</a></li><li class="chapter-item expanded "><a href="deml.html" class="active"><strong aria-hidden="true">5.3.</strong> DEML (DAG Elevation Markup Language)</a></li><li class="chapter-item expanded "><a href="visual_metronome.html"><strong aria-hidden="true">5.4.</strong> Visual Metronome</a></li><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.5.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="solunar_clock.html"><strong aria-hidden="true">5.6.</strong> Solunar Clock</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.7.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.8.</strong> Pixel Art</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,20 +173,127 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="work-experience"><a class="header" href="#work-experience">Work Experience</a></h1>
-<p>My own apps: <a href="showyourwork.html">SHOW YOUR WORK</a>, Lanthir-CLI, <a href="./crepe_bordeaux.html">Crepe Bordeaux</a>, <a href="./deml.html">DEML</a> | January 2023 - Present</p>
-<p><a href="age_of_learning.html">Age of Learning</a> | January 2016 - December 2022</p>
-<p><a href="interact.html">InterAct</a> | January 2013 - October 2015</p>
+                        <h1 id="deml-dag-elevation-markup-language"><a class="header" href="#deml-dag-elevation-markup-language">DEML (DAG Elevation Markup Language)</a></h1>
+<p><a href="https://github.com/Mcmartelle/deml" title="" target="_blank">GitHub</a></p>
+<p>Languages designed to represent all types of graph data structures, such as Graphviz’s <a href="https://graphviz.org/doc/info/lang.html" title="" target="_blank">DOT Language</a> and Mermaid JS’s <a href="https://mermaid.js.org/syntax/flowchart.html" title="" target="_blank">flowchart syntax</a>, don’t take advantage of the properties specific to DAGs (<a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" title="" target="_blank">Directed Acyclic Graphs</a>).</p>
+<p>DAGs act like rivers. Water doesn’t flow upstream (tides and floods being exceptions). Sections of a river at the same elevation can’t be the inputs or outputs of each other, like the nodes C, D, and E in the image below. Their input is B. C outputs to F, while D and E output to G.</p>
+<p><img src="images/deml_river.jpg" alt="Photo of a river to illustrate how DAGs operate" /></p>
+<p>DEML’s goal is to use this ordering as part of the file syntax to make it easier for humans to parse. In DEML we represent an elevation marker with <code>----</code> on a new line. The order of elevation clusters is significant, but the order of nodes between two <code>----</code> elevation markers is not significant.</p>
+<pre><code class="language-Haskell">UpRiver &gt; A
+----
+A &gt; B
+----
+B &gt; C | D | E
+----
+C
+D
+E
+----
+F &lt; C
+G &lt; D | E &gt; DownRiver
+----
+DownRiver &lt; F
+</code></pre>
+<p>Nodes are defined by the first word on a line. The defined node can point to its outputs with <code>&gt;</code> and to its inputs with <code>&lt;</code>. Inputs and outputs are separated by <code>|</code>. </p>
+<h2 id="dagrs"><a class="header" href="#dagrs">Dagrs</a></h2>
+<p><a href="https://github.com/open-rust-initiative/dagrs" title="" target="_blank">Dagrs</a> is a library for running multiple tasks with dependencies defined in a DAG. In DEML, shell commands can be assigned to a node with <code>=</code>. DEML files can be run via dag-rs with the comand <code>deml run -i &lt;filepath&gt;</code>.</p>
+<p>To compare the difference in readability, here is the <a href="https://github.com/open-rust-initiative/dagrs#yaml-configuration-file" title="" target="_blank">Dagrs YAML example</a> in both YAML and DEML</p>
+<h3 id="yaml"><a class="header" href="#yaml">YAML</a></h3>
+<pre><code class="language-YAML">dagrs:
+  a:
+    name: &quot;Task 1&quot;
+    after: [ b, c ]
+    cmd: echo a
+  b:
+    name: &quot;Task 2&quot;
+    after: [ c, f, g ]
+    cmd: echo b
+  c:
+    name: &quot;Task 3&quot;
+    after: [ e, g ]
+    cmd: echo c
+  d:
+    name: &quot;Task 4&quot;
+    after: [ c, e ]
+    cmd: echo d
+  e:
+    name: &quot;Task 5&quot;
+    after: [ h ]
+    cmd: echo e
+  f:
+    name: &quot;Task 6&quot;
+    after: [ g ]
+    cmd: python3 ./tests/config/test.py
+  g:
+    name: &quot;Task 7&quot;
+    after: [ h ]
+    cmd: node ./tests/config/test.js
+  h:
+    name: &quot;Task 8&quot;
+    cmd: echo h
+</code></pre>
+<h3 id="deml"><a class="header" href="#deml">DEML</a></h3>
+<pre><code class="language-Haskell">H &gt; E | G = echo h
+----
+G = node ./tests/config/test.js
+E = echo e
+----
+F &lt; G = python3 ./tests/config/test.py
+C &lt; E | G = echo c
+----
+B &lt; C | F | G = echo b
+D &lt; C | E = echo d
+----
+A &lt; B | C = echo a
+</code></pre>
+<h2 id="mermaid-js"><a class="header" href="#mermaid-js">Mermaid JS</a></h2>
+<p>To convert DEML files to Mermaid Diagram files (.mmd) use the command <code>deml mermaid -i &lt;inputfile&gt; -o &lt;outputfile&gt;</code>. The mermaid file can be used to generate an image at <a href="https://mermaid.live/" title="" target="_blank">mermaid.live</a></p>
+<p><img src="assets/river-mermaid-diagram.jpg" alt="mermaid js flowchart image of the river DAG" /></p>
+<h2 id="goals"><a class="header" href="#goals">Goals</a></h2>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+Put my idea for an elevation based DAG representation into the wild</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Run DAGs with dag-rs</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Convert DEML files to Mermaid Diagram files </li>
+<li><input disabled="" type="checkbox"/>
+Add a syntax to label edges</li>
+</ul>
+<h2 id="possible-goals"><a class="header" href="#possible-goals">Possible Goals</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Syntax highlighting (Haskell syntax highlighting works well enough for the examples in this README)</li>
+</ul>
+<h2 id="non-goals"><a class="header" href="#non-goals">Non-Goals</a></h2>
+<ul>
+<li>Supporting commercial products</li>
+</ul>
+<h2 id="why-though"><a class="header" href="#why-though">Why, Though?</a></h2>
+<p>I was thinking about how it’s annoying in languages like C when function declaration order matters. Then I wondered if there could be a case when it would be a nice feature for declaration order to matter and I thought of DAGs.</p>
+<h2 id="license"><a class="header" href="#license">License</a></h2>
+<p>Licensed under either of</p>
+<ul>
+<li>Apache License, Version 2.0
+(<a href="LICENSE-APACHE">LICENSE-APACHE</a> or http://www.apache.org/licenses/LICENSE-2.0)</li>
+<li>MIT license
+(<a href="LICENSE-MIT">LICENSE-MIT</a> or http://opensource.org/licenses/MIT)</li>
+</ul>
+<p>at your option.</p>
+<h2 id="contribution"><a class="header" href="#contribution">Contribution</a></h2>
+<p>Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
+dual licensed as above, without any additional terms or conditions.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="contact_info.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="crepe_bordeaux.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="age_of_learning.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="visual_metronome.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -196,11 +303,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="contact_info.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="crepe_bordeaux.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="age_of_learning.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="visual_metronome.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

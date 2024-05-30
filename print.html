@@ -1,42 +1,28 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Matthew C. Martelle</title>
-        
-        <meta name="robots" content="noindex" />
-        
-        
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
-
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Matthew Martelle&#x27;s Curriculum Vitae">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
@@ -44,19 +30,18 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
 
-        
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -72,79 +57,104 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="parent_section.html"><strong aria-hidden="true">2.1.1.</strong> Parent Section</a></li></ol></li><li class="chapter-item expanded "><a href="interact.html"><strong aria-hidden="true">2.2.</strong> InterAct</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="conoco_phillips_alaska.html"><strong aria-hidden="true">2.2.1.</strong> Conoco Phillips Alaska</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.1.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.2.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.3.</strong> Pixel Art</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li class="chapter-item expanded "><a href="interact.html"><strong aria-hidden="true">2.2.</strong> InterAct</a></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="showyourwork.html"><strong aria-hidden="true">5.1.</strong> SHOW YOUR WORK cascading calculator</a></li><li class="chapter-item expanded "><a href="crepe_bordeaux.html"><strong aria-hidden="true">5.2.</strong> Crepe Bordeaux clipboard CLI tool</a></li><li class="chapter-item expanded "><a href="deml.html"><strong aria-hidden="true">5.3.</strong> DEML (DAG Elevation Markup Language)</a></li><li class="chapter-item expanded "><a href="visual_metronome.html"><strong aria-hidden="true">5.4.</strong> Visual Metronome</a></li><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.5.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="solunar_clock.html"><strong aria-hidden="true">5.6.</strong> Solunar Clock</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.7.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.8.</strong> Pixel Art</a></li></ol></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Matthew C. Martelle</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
+
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -152,10 +162,9 @@
                         </ul>
                     </div>
                 </div>
-                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -169,41 +178,49 @@
 <h3 id="matthew-c-martelle"><a class="header" href="#matthew-c-martelle">Matthew C. Martelle</a></h3>
 <pre><code>matthew@martelle.dev
 </code></pre>
-<p>Software Engineer III | Age of Learning (Creators of <a href="https://www.abcmouse.com/">ABCmouse.com</a>) | 2016-Present</p>
+<p>Software Engineer III | Age of Learning (Creators of <a href="https://www.abcmouse.com/" title="" target="_blank">ABCmouse.com</a>) | 2016-2022</p>
 <ul>
-<li>JavaScript, PHP, HTML, CSS (6 Years)</li>
-<li>Rust, Lua (3 Years)</li>
+<li>JavaScript, PHP, HTML, CSS (8 Years)</li>
+<li>Rust (4 Years)</li>
+<li>Flutter/Dart (2 Years)</li>
 </ul>
 <p>B.S. Mechanical Engineering 2012, Cal Poly</p>
-<h1 id="contact-information"><a class="header" href="#contact-information">Contact Information</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="contact-information"><a class="header" href="#contact-information">Contact Information</a></h1>
 <p>Matthew C. Martelle</p>
 <pre><code>matthew@martelle.dev
 </code></pre>
-<p><a href="https://github.com/Mcmartelle">GitHub</a> |
-<a href="https://www.linkedin.com/in/matthew-martelle/">LinkedIn</a></p>
+<p><a href="https://github.com/Mcmartelle" title="" target="_blank">GitHub</a> |
+<a href="https://www.linkedin.com/in/matthew-martelle/" title="" target="_blank">LinkedIn</a></p>
 <p><a href="tel:+17146867608">1(714)686-7608</a></p>
-<h1 id="work-experience"><a class="header" href="#work-experience">Work Experience</a></h1>
-<p><a href="age_of_learning.html">Age of Learning</a> | January 2016 - Present</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="work-experience"><a class="header" href="#work-experience">Work Experience</a></h1>
+<p>My own apps: <a href="showyourwork.html">SHOW YOUR WORK</a>, Lanthir-CLI, <a href="./crepe_bordeaux.html">Crepe Bordeaux</a>, <a href="./deml.html">DEML</a> | January 2023 - Present</p>
+<p><a href="age_of_learning.html">Age of Learning</a> | January 2016 - December 2022</p>
 <p><a href="interact.html">InterAct</a> | January 2013 - October 2015</p>
-<h1 id="age-of-learning"><a class="header" href="#age-of-learning">Age of Learning</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="age-of-learning"><a class="header" href="#age-of-learning">Age of Learning</a></h1>
 <p>Glendale, CA</p>
-<p><a href="https://www.ageoflearning.com/">Age of Learning corporate website</a></p>
-<p>Age of Learning's main product <a href="https://www.abcmouse.com/">ABCmouse.com</a></p>
+<p><a href="https://www.ageoflearning.com/" title="" target="_blank">Age of Learning corporate website</a></p>
+<p>Age of Learning’s main product <a href="https://www.abcmouse.com/" title="" target="_blank">ABCmouse.com</a></p>
 <h2 id="software-engineer-iii"><a class="header" href="#software-engineer-iii">Software Engineer III</a></h2>
-<p>January 2016 - Present</p>
+<p>January 2016 - December 2022</p>
 <h2 id="projects"><a class="header" href="#projects">Projects</a></h2>
 <ul>
-<li><a href="parent_section.html">Parent Section</a></li>
-<li>Shortened Cancellation Path</li>
-<li>New Onboarding section</li>
-<li>Several new Student Homepage's for A/B tests</li>
+<li>Parent Section
+<ul>
+<li>Billing</li>
+<li>Subscription Management</li>
+<li>Settings</li>
 </ul>
-<h1 id="parent-section"><a class="header" href="#parent-section">Parent Section</a></h1>
-<p>Rebuilt a dozen pages of settings, account information, billing etc. to Angular 1.x</p>
-<h1 id="interact"><a class="header" href="#interact">InterAct</a></h1>
-<p><a href="https://www.linkedin.com/company/interact-projects">InterAct LinkedIn</a></p>
+</li>
+<li>New Onboarding section</li>
+<li>Shortened Cancellation Path built for A/B testing</li>
+<li>Countless A/B tests for the Student Homepage (so many)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="interact"><a class="header" href="#interact">InterAct</a></h1>
+<p>Ventura, CA &amp; Kenai, Alaska</p>
+<p><a href="https://www.linkedin.com/company/interact-projects" title="" target="_blank">InterAct LinkedIn</a></p>
 <h2 id="projects-1"><a class="header" href="#projects-1">Projects</a></h2>
-<h3 id="a-hrefconoco_philips_alaskahtmlconoco-phillips-alaskaa"><a class="header" href="#a-hrefconoco_philips_alaskahtmlconoco-phillips-alaskaa"><a href="./conoco_philips_alaska.html">Conoco Phillips Alaska</a></a></h3>
+<h3 id="conoco-phillips-alaska"><a class="header" href="#conoco-phillips-alaska">Conoco Phillips Alaska</a></h3>
+<p>Verified and updated the piping and instrumentation diagrams of systems with pressure safety valves at the:</p>
 <ul>
 <li>Tyonek Oil Platform</li>
 <li>LNG Plant</li>
@@ -213,77 +230,312 @@
 <li>Injection Well Permit Analysis</li>
 <li>Emmy Oil Platform</li>
 </ul>
-<h1 id="conoco-phillips-alaska"><a class="header" href="#conoco-phillips-alaska">Conoco Phillips Alaska</a></h1>
-<p>Verified and updated the piping and instrumentation diagrams of systems with pressure safety valves at the Liquefied Natural Gas plant in Kenai, Alaska.</p>
-<h1 id="education"><a class="header" href="#education">Education</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="education"><a class="header" href="#education">Education</a></h1>
 <h2 id="mechanical-engineering-bs-2012"><a class="header" href="#mechanical-engineering-bs-2012">Mechanical Engineering B.S., 2012</a></h2>
 <h3 id="california-polytechnic-state-university-san-luis-obispo-ca"><a class="header" href="#california-polytechnic-state-university-san-luis-obispo-ca">California Polytechnic State University, San Luis Obispo, CA</a></h3>
-<h1 id="skills"><a class="header" href="#skills">Skills</a></h1>
-<ul>
-<li><strong>JavaScript, PHP, HTML, CSS</strong> (6 Years)
+<div style="break-before: page; page-break-before: always;"></div><h1 id="skills"><a class="header" href="#skills">Skills</a></h1>
+<h2 id="javascript-php-html-css-8-years"><a class="header" href="#javascript-php-html-css-8-years"><strong>JavaScript, PHP, HTML, CSS</strong> (8 Years)</a></h2>
 <ul>
 <li>Javascript Frameworks
 <ul>
 <li>Angular 1.x</li>
 <li>Lit Html, Lit Element</li>
 <li>AofLJS 3.x</li>
+<li>Mithril</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><strong>Rust</strong> (3 Years)
+<h2 id="rust-4-years"><a class="header" href="#rust-4-years"><strong>Rust</strong> (4 Years)</a></h2>
 <ul>
-<li>CLI Tool Development</li>
+<li>CLI tools, and more CLI tools.</li>
 <li>Bevy ECS Game Engine</li>
 <li>Seed-RS (Elm-like wasm website framework in Rust)</li>
 <li>Iced</li>
 </ul>
-</li>
-<li><strong>Lua</strong> (3 Years)
+<h2 id="flutterdart-2-years"><a class="header" href="#flutterdart-2-years"><strong>Flutter/Dart</strong> (2 Years)</a></h2>
+<ul>
+<li>Apps</li>
+<li>WASM websites</li>
+</ul>
+<h2 id="lua-3-years"><a class="header" href="#lua-3-years"><strong>Lua</strong> (3 Years)</a></h2>
 <ul>
 <li>Love2d Game Engine</li>
 <li>Computercraft robots in Minecraft</li>
 <li>PICO-8 Fantasy Console</li>
 </ul>
+<h2 id="c-1-year"><a class="header" href="#c-1-year"><strong>C#</strong> (1 Year)</a></h2>
+<ul>
+<li>Unity Game Engine</li>
+</ul>
+<h2 id="languages-ive-dabbled-in-for-fun"><a class="header" href="#languages-ive-dabbled-in-for-fun">Languages I’ve dabbled in for fun</a></h2>
+<ul>
+<li>Go</li>
+<li>CUE</li>
+<li>Elm</li>
+<li>Haskell</li>
+<li>OCaml</li>
+<li>Zig</li>
+<li>Scheme</li>
+<li>Python</li>
+<li>C/C++</li>
+<li>Nix</li>
+<li>Nu</li>
+<li>Fish</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="personal-projects"><a class="header" href="#personal-projects">Personal Projects</a></h1>
+<h2 id="websites"><a class="header" href="#websites">Websites</a></h2>
+<ul>
+<li><a href="./active_recall_js.html">Active Recall JS</a> | <a href="https://activerecall.study" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/active_recall_js" title="" target="_blank">GitHub</a></li>
+<li><a href="./mind_monsoon.html">Mind Monsoon</a> | <a href="https://mindmonsoon.com/" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/open-brainstorm" title="" target="_blank">GitHub</a></li>
+<li><a href="./visual_metronome.html">Visual Metronome</a> | <a href="http://www.martelle.dev/metrognome/" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/metrognome" title="" target="_blank">GitHub</a></li>
+</ul>
+<h2 id="cli-tools"><a class="header" href="#cli-tools">CLI Tools</a></h2>
+<ul>
+<li><a href="./crepe_bordeaux.html">Crepe Bordeaux</a> clipboard tool | <a href="https://github.com/Mcmartelle/crepe-bordeaux" title="" target="_blank">GitHub</a></li>
+<li><a href="./deml.html">DEML (DAG Elevation Markup Language)</a> | <a href="https://github.com/Mcmartelle/deml" title="" target="_blank">GitHub</a></li>
+</ul>
+<h2 id="apps"><a class="header" href="#apps">Apps</a></h2>
+<ul>
+<li><a href="./showyourwork.html">SHOW YOUR WORK</a> cascading calculator</li>
+<li><a href="./solunar_clock.html">Solunar Clock</a> | <a href="https://github.com/Mcmartelle/solunar_clock" title="" target="_blank">GitHub</a></li>
+</ul>
+<h2 id="game-design-exploration"><a class="header" href="#game-design-exploration">Game Design Exploration</a></h2>
+<ul>
+<li>One button input:
+<ul>
+<li>Curling Game</li>
+<li>Square Chicken Fighting Game</li>
+</ul>
 </li>
 </ul>
-<h1 id="personal-projects"><a class="header" href="#personal-projects">Personal Projects</a></h1>
-<h2 id="software-engineering"><a class="header" href="#software-engineering">Software Engineering</a></h2>
+<h2 id="bevy-game-jam-games"><a class="header" href="#bevy-game-jam-games">Bevy Game Jam Games</a></h2>
 <ul>
-<li><a href="./active_recall_js.html">Active Recall JS</a></li>
-<li><a href="./mind_monsoon.html">Mind Monsoon</a></li>
-<li>Pi Cluster (on hold)</li>
-<li>Bevy Brawler</li>
+<li>Queen Beevy | <a href="craghammer.itch.io/queen-beevy">itch.io</a> | <a href="https://github.com/Mcmartelle/queen_beevy" title="" target="_blank">GitHub</a></li>
+<li>Unfair Snek | <a href="craghammer.itch.io/unfair-snek">itch.io</a> | <a href="https://github.com/Mcmartelle/unfair-advantage" title="" target="_blank">GitHub</a></li>
 </ul>
 <h2 id="mechanical-engineering"><a class="header" href="#mechanical-engineering">Mechanical Engineering</a></h2>
 <ul>
 <li>FFN 3000 (Forget Fan Noise) Fanless Chimney Effect passive laptop cooler</li>
-<li>DT BCS RC Aircraft (Differential Thrust, Blown Control Surface, Remote Control) (in progress)</li>
+<li>DT BCS RC Aircraft (Differential Thrust, Blown Control Surface)</li>
 </ul>
-<h1 id="active-recall-js"><a class="header" href="#active-recall-js">Active Recall JS</a></h1>
-<p>Hosted at <a href="https://activerecall.study">activerecall.study</a>.</p>
-<p>An interactive auditory flash card system with spoken prompts using the text to speech features of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">Web Speech API</a></p>
-<p>Inspired by <a href="https://en.wikipedia.org/wiki/Anki_(software)">Anki</a> flash card system.</p>
-<p>Made with <a href="https://mithril.js.org/index.html">MithrilJS</a>.</p>
-<h1 id="mind-monsoon-a-hrefhttpsmindmonsooncom-target_blankhosted-herea"><a class="header" href="#mind-monsoon-a-hrefhttpsmindmonsooncom-target_blankhosted-herea">Mind Monsoon <a href="https://mindmonsoon.com" target="_blank">(hosted here)</a></a></h1>
-<p>Cooperative brainstorming website. </p>
-<h1 id="pixel-art"><a class="header" href="#pixel-art">Pixel Art</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="show-your-work"><a class="header" href="#show-your-work">SHOW YOUR WORK</a></h1>
+<p>A cascading table calculator inspired by Scheme, RPN, and Excel.</p>
+<p>For when you want more than a calculator app, but don’t want to wait for Excel to open.</p>
+<p>Calculations are arbitrary precision. The copy/paste helper allows precision and number format sent to the clipboard to be easily adjusted.</p>
+<p>Navigate with VIM motions.</p>
+<p>Change inputs and see all intermediate values.</p>
+<p><img src="images/show_your_work_screenshot.png" alt="screenshot of the SHOW YOUR WORK app" /></p>
+<p>In progress. It works well enough for my personal usage, but I’d like to polish out some rough spots before I release it.</p>
+<p>Built in <a href="https://flutter.dev/" title="" target="_blank">Flutter</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="crepe-bordeaux"><a class="header" href="#crepe-bordeaux">Crepe Bordeaux</a></h1>
+<p>The cross-platform clipboard cli tool | <a href="https://github.com/Mcmartelle/crepe-bordeaux" title="" target="_blank">GitHub</a> | <a href="https://crates.io/crates/crepe-bordeaux" title="" target="_blank">crates.io</a></p>
+<p><img src="images/crepe_bordeaux.png" alt="crepe bordeaux" /></p>
+<h3 id="copy"><a class="header" href="#copy">Copy:</a></h3>
+<pre><code class="language-console">$ echo &quot;foo&quot; | cb
+</code></pre>
+<h3 id="paste"><a class="header" href="#paste">Paste:</a></h3>
+<pre><code class="language-console">$ cb
+foo
+</code></pre>
+<h3 id="clear"><a class="header" href="#clear">Clear:</a></h3>
+<pre><code class="language-console">$ cb clear
+</code></pre>
+<h3 id="save-to-a-register"><a class="header" href="#save-to-a-register">Save to a register:</a></h3>
+<pre><code class="language-console">$ echo &quot;thing I want to save for a while&quot; | cb memorable-name
+</code></pre>
+<h3 id="paste-from-a-register"><a class="header" href="#paste-from-a-register">Paste from a register:</a></h3>
+<pre><code class="language-console">$ cb memorable-name
+thing I want to save for a while
+</code></pre>
+<h3 id="list-registers"><a class="header" href="#list-registers">List registers:</a></h3>
+<pre><code class="language-console">$ cb list
+memorable-name
+</code></pre>
+<h3 id="clear-a-register"><a class="header" href="#clear-a-register">Clear a register:</a></h3>
+<pre><code class="language-console">$ cb memorable-name clear
+</code></pre>
+<h3 id="clear-system-clipboard-and-all-registers"><a class="header" href="#clear-system-clipboard-and-all-registers">Clear system clipboard and all registers:</a></h3>
+<pre><code class="language-console">$ cb clear-all
+</code></pre>
+<h3 id="select-a-register-interactively-with-fzf-or-skim-in-bash"><a class="header" href="#select-a-register-interactively-with-fzf-or-skim-in-bash">Select a register interactively with <a href="https://github.com/junegunn/fzf" title="" target="_blank">fzf</a> (or <a href="https://github.com/lotabout/skim" title="" target="_blank">skim</a>) in bash:</a></h3>
+<pre><code>$ cb $(cb list | fzf)
+</code></pre>
+<h3 id="no-clipboard-available"><a class="header" href="#no-clipboard-available">No clipboard available?</a></h3>
+<p><code>cb</code> will write to a .txt file in the folder determined by Rust’s <a href="https://doc.rust-lang.org/std/env/fn.temp_dir.html" title="" target="_blank">std::env::temp_dir</a></p>
+<h3 id="want-to-use-a-different-folder"><a class="header" href="#want-to-use-a-different-folder">Want to use a different folder?</a></h3>
+<p>Set the environment variable <code>CB_DIR</code></p>
+<h3 id="why-though"><a class="header" href="#why-though">Why, though?</a></h3>
+<p>I was enjoying <a href="https://github.com/amilajack/clipboard" title="" target="_blank">Amila’s</a> <code>cb</code> interface on my main computer and had already forked it to add Wayland support with <a href="https://github.com/1Password/arboard" title="" target="_blank">arboard</a>. However, on a minimal install of NixOS with no display/window manager there was no clipboard for it to use, so I made this.</p>
+<h3 id="why-crepe-bordeaux-though"><a class="header" href="#why-crepe-bordeaux-though">Why “crepe-bordeaux”, though?</a></h3>
+<p>The names <a href="https://crates.io/crates/clipboard-cli" title="" target="_blank">clipboard-cli</a> and <a href="https://crates.io/crates/cli-clipboard" title="" target="_blank">cli-clipboard</a> were already taken, and <a href="https://crates.io/crates/tealdeer" title="" target="_blank">tealdeer</a> inspired creativity.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="deml-dag-elevation-markup-language"><a class="header" href="#deml-dag-elevation-markup-language">DEML (DAG Elevation Markup Language)</a></h1>
+<p><a href="https://github.com/Mcmartelle/deml" title="" target="_blank">GitHub</a></p>
+<p>Languages designed to represent all types of graph data structures, such as Graphviz’s <a href="https://graphviz.org/doc/info/lang.html" title="" target="_blank">DOT Language</a> and Mermaid JS’s <a href="https://mermaid.js.org/syntax/flowchart.html" title="" target="_blank">flowchart syntax</a>, don’t take advantage of the properties specific to DAGs (<a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" title="" target="_blank">Directed Acyclic Graphs</a>).</p>
+<p>DAGs act like rivers. Water doesn’t flow upstream (tides and floods being exceptions). Sections of a river at the same elevation can’t be the inputs or outputs of each other, like the nodes C, D, and E in the image below. Their input is B. C outputs to F, while D and E output to G.</p>
+<p><img src="images/deml_river.jpg" alt="Photo of a river to illustrate how DAGs operate" /></p>
+<p>DEML’s goal is to use this ordering as part of the file syntax to make it easier for humans to parse. In DEML we represent an elevation marker with <code>----</code> on a new line. The order of elevation clusters is significant, but the order of nodes between two <code>----</code> elevation markers is not significant.</p>
+<pre><code class="language-Haskell">UpRiver &gt; A
+----
+A &gt; B
+----
+B &gt; C | D | E
+----
+C
+D
+E
+----
+F &lt; C
+G &lt; D | E &gt; DownRiver
+----
+DownRiver &lt; F
+</code></pre>
+<p>Nodes are defined by the first word on a line. The defined node can point to its outputs with <code>&gt;</code> and to its inputs with <code>&lt;</code>. Inputs and outputs are separated by <code>|</code>. </p>
+<h2 id="dagrs"><a class="header" href="#dagrs">Dagrs</a></h2>
+<p><a href="https://github.com/open-rust-initiative/dagrs" title="" target="_blank">Dagrs</a> is a library for running multiple tasks with dependencies defined in a DAG. In DEML, shell commands can be assigned to a node with <code>=</code>. DEML files can be run via dag-rs with the comand <code>deml run -i &lt;filepath&gt;</code>.</p>
+<p>To compare the difference in readability, here is the <a href="https://github.com/open-rust-initiative/dagrs#yaml-configuration-file" title="" target="_blank">Dagrs YAML example</a> in both YAML and DEML</p>
+<h3 id="yaml"><a class="header" href="#yaml">YAML</a></h3>
+<pre><code class="language-YAML">dagrs:
+  a:
+    name: &quot;Task 1&quot;
+    after: [ b, c ]
+    cmd: echo a
+  b:
+    name: &quot;Task 2&quot;
+    after: [ c, f, g ]
+    cmd: echo b
+  c:
+    name: &quot;Task 3&quot;
+    after: [ e, g ]
+    cmd: echo c
+  d:
+    name: &quot;Task 4&quot;
+    after: [ c, e ]
+    cmd: echo d
+  e:
+    name: &quot;Task 5&quot;
+    after: [ h ]
+    cmd: echo e
+  f:
+    name: &quot;Task 6&quot;
+    after: [ g ]
+    cmd: python3 ./tests/config/test.py
+  g:
+    name: &quot;Task 7&quot;
+    after: [ h ]
+    cmd: node ./tests/config/test.js
+  h:
+    name: &quot;Task 8&quot;
+    cmd: echo h
+</code></pre>
+<h3 id="deml"><a class="header" href="#deml">DEML</a></h3>
+<pre><code class="language-Haskell">H &gt; E | G = echo h
+----
+G = node ./tests/config/test.js
+E = echo e
+----
+F &lt; G = python3 ./tests/config/test.py
+C &lt; E | G = echo c
+----
+B &lt; C | F | G = echo b
+D &lt; C | E = echo d
+----
+A &lt; B | C = echo a
+</code></pre>
+<h2 id="mermaid-js"><a class="header" href="#mermaid-js">Mermaid JS</a></h2>
+<p>To convert DEML files to Mermaid Diagram files (.mmd) use the command <code>deml mermaid -i &lt;inputfile&gt; -o &lt;outputfile&gt;</code>. The mermaid file can be used to generate an image at <a href="https://mermaid.live/" title="" target="_blank">mermaid.live</a></p>
+<p><img src="assets/river-mermaid-diagram.jpg" alt="mermaid js flowchart image of the river DAG" /></p>
+<h2 id="goals"><a class="header" href="#goals">Goals</a></h2>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+Put my idea for an elevation based DAG representation into the wild</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Run DAGs with dag-rs</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Convert DEML files to Mermaid Diagram files </li>
+<li><input disabled="" type="checkbox"/>
+Add a syntax to label edges</li>
+</ul>
+<h2 id="possible-goals"><a class="header" href="#possible-goals">Possible Goals</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Syntax highlighting (Haskell syntax highlighting works well enough for the examples in this README)</li>
+</ul>
+<h2 id="non-goals"><a class="header" href="#non-goals">Non-Goals</a></h2>
+<ul>
+<li>Supporting commercial products</li>
+</ul>
+<h2 id="why-though-1"><a class="header" href="#why-though-1">Why, Though?</a></h2>
+<p>I was thinking about how it’s annoying in languages like C when function declaration order matters. Then I wondered if there could be a case when it would be a nice feature for declaration order to matter and I thought of DAGs.</p>
+<h2 id="license"><a class="header" href="#license">License</a></h2>
+<p>Licensed under either of</p>
+<ul>
+<li>Apache License, Version 2.0
+(<a href="LICENSE-APACHE">LICENSE-APACHE</a> or http://www.apache.org/licenses/LICENSE-2.0)</li>
+<li>MIT license
+(<a href="LICENSE-MIT">LICENSE-MIT</a> or http://opensource.org/licenses/MIT)</li>
+</ul>
+<p>at your option.</p>
+<h2 id="contribution"><a class="header" href="#contribution">Contribution</a></h2>
+<p>Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
+dual licensed as above, without any additional terms or conditions.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="visual-metronome"><a class="header" href="#visual-metronome">Visual Metronome</a></h1>
+<p>See it <a href="http://www.martelle.dev/metrognome/" title="" target="_blank">here</a> | <a href="https://github.com/Mcmartelle/metrognome" title="" target="_blank">GitHub</a></p>
+<p>Reading up on the Web Animation 2 specs I realised this visual metronome would be easy to make.</p>
+<p><img src="images/visual_metronome.png" alt="screen shot of visual metronome" /></p>
+<p>Built in <a href="https://elm-lang.org/" title="" target="_blank">Elm</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="active-recall-js"><a class="header" href="#active-recall-js">Active Recall JS</a></h1>
+<p><a href="https://activerecall.study" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/active_recall_js" title="" target="_blank">GitHub</a></p>
+<p>An interactive auditory flash card system with spoken prompts using the text to speech features of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API" title="" target="_blank">Web Speech API</a></p>
+<p><img src="images/active_recall_screenshot.png" alt="screenshot of activerecall.study" /></p>
+<p>Inspired by the <a href="https://en.wikipedia.org/wiki/Anki_(software)" title="" target="_blank">Anki</a> flash card system.</p>
+<p>Made with <a href="https://mithril.js.org/index.html" title="" target="_blank">MithrilJS</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="solunar-clock"><a class="header" href="#solunar-clock">Solunar Clock</a></h1>
+<p><a href="https://github.com/Mcmartelle/solunar_clock" title="" target="_blank">GitHub</a></p>
+<p>A 24 hour solar lunar clock built with <a href="https://github.com/iced-rs/iced" title="" target="_blank">Iced</a>.</p>
+<p><img src="images/solunar_clock.png" alt="alt text" title="Solar Lunar Clock app screenshot" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mind-monsoon"><a class="header" href="#mind-monsoon">Mind Monsoon</a></h1>
+<p>A cooperative brainstorming website where multiple people can add ideas and upvote or downvote them.</p>
+<p>I use it most often when a group of people want to go somewhere for lunch but can’t decide where to go. This can really speed up the process.</p>
+<p><img src="images/mindmonsoon_screenshot.png" alt="screenshot of mindmonsoon.com" /></p>
+<p>Hosted at <a href="https://mindmonsoon.com" title="" target="_blank">mindmonsoon.com</a> (sadly, brainstorm.com was taken)</p>
+<p>Built with <a href="https://ageoflearning.github.io/aofl/#/" title="" target="_blank">AofL JS</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pixel-art"><a class="header" href="#pixel-art">Pixel Art</a></h1>
 <h2 id="dog-portraits"><a class="header" href="#dog-portraits">Dog Portraits</a></h2>
+<p>Some of my friend’s dogs.</p>
 <p><img src="images/Rocket.png" alt="pixel art portrait of dog" />
+<img src="images/miles_dog.png" alt="pixel art portrait of dog" />
+<img src="images/lily.png" alt="pixel art portrait of dog" />
+<img src="images/bageera.png" alt="pixel art portrait of dog" />
+<img src="images/podrick.png" alt="pixel art portrait of dog" />
+<img src="images/bammbamm.png" alt="pixel art portrait of dog" />
+<img src="images/bear.png" alt="pixel art portrait of dog" />
+<img src="images/dj.png" alt="pixel art portrait of dog" />
+<img src="images/lazerus_dog.png" alt="pixel art portrait of dog" />
+<img src="images/millie.png" alt="pixel art portrait of dog" />
+<img src="images/mouse.png" alt="pixel art portrait of dog" />
 <img src="images/Nico.png" alt="pixel art portrait of dog" />
-<img src="images/bammbamm.png" alt="pixel art portrait of dog" /></p>
-<h2 id="pipe-wrench"><a class="header" href="#pipe-wrench">Pipe Wrench</a></h2>
-<p><img src="images/pipe_wrench.gif" alt="pixel pipe wrench animation" /></p>
-<h2 id="flawless-running-animation"><a class="header" href="#flawless-running-animation">Flawless Running Animation</a></h2>
-<p><img src="images/slayer_run.gif" alt="knight running" /></p>
+<img src="images/obi.png" alt="pixel art portrait of dog" />
+<img src="images/starboard.png" alt="pixel art portrait of dog" />
+<img src="images/tickles.png" alt="pixel art portrait of dog" />
+<img src="images/vienna.png" alt="pixel art portrait of dog" />
+<img src="images/Winston.png" alt="pixel art portrait of dog" />
+<img src="images/doggo.png" alt="pixel art portrait of dog" />
+<img src="images/driver.png" alt="pixel art portrait of dog" /></p>
+<h2 id="horse-portraits"><a class="header" href="#horse-portraits">Horse Portraits</a></h2>
+<p><img src="images/charles.png" alt="pixel art portrait of horse" /></p>
+<h2 id="slackdiscord-emotes"><a class="header" href="#slackdiscord-emotes">Slack/Discord Emotes</a></h2>
+<p><img src="images/this.gif" alt="animated pixel art arrow pointing to “this”" /></p>
+<h2 id="other"><a class="header" href="#other">Other</a></h2>
+<p><img src="images/pipe_wrench.gif" alt="pixel pipe wrench animation" />
+<img src="images/slayer_run.gif" alt="knight running" />
+<img src="images/tomato2.png" alt="pixel art of a tomato" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
 
-                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -291,17 +543,16 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
 
-                
             </nav>
 
         </div>
 
-        
         <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
             socket.onmessage = function (event) {
                 if (event.data === "reload") {
                     socket.close();
@@ -313,42 +564,30 @@
                 socket.close();
             }
         </script>
-        
 
-        
 
-        
 
-        
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        
 
-        
 
-        
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
 
-        
-        
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
-        
-        
 
+    </div>
     </body>
 </html>
