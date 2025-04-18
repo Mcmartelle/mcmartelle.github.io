@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="Matthew Martelle&#x27;s Curriculum Vitae">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#ffffff" />
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -31,8 +31,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
+    <body>
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -61,71 +60,40 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
+            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add('js');
         </script>
-
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li class="chapter-item expanded "><a href="interact.html"><strong aria-hidden="true">2.2.</strong> InterAct</a></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="showyourwork.html"><strong aria-hidden="true">5.1.</strong> SHOW YOUR WORK cascading calculator</a></li><li class="chapter-item expanded "><a href="crepe_bordeaux.html" class="active"><strong aria-hidden="true">5.2.</strong> Crepe Bordeaux clipboard CLI tool</a></li><li class="chapter-item expanded "><a href="deml.html"><strong aria-hidden="true">5.3.</strong> DEML (DAG Elevation Markup Language)</a></li><li class="chapter-item expanded "><a href="visual_metronome.html"><strong aria-hidden="true">5.4.</strong> Visual Metronome</a></li><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.5.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="solunar_clock.html"><strong aria-hidden="true">5.6.</strong> Solunar Clock</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.7.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.8.</strong> Pixel Art</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li class="chapter-item expanded "><a href="interact.html"><strong aria-hidden="true">2.2.</strong> InterAct</a></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="showyourwork.html"><strong aria-hidden="true">5.1.</strong> SHOW YOUR WORK cascading calculator</a></li><li class="chapter-item expanded "><a href="crepe_bordeaux.html" class="active"><strong aria-hidden="true">5.2.</strong> Crepe Bordeaux clipboard CLI tool</a></li><li class="chapter-item expanded "><a href="deml.html"><strong aria-hidden="true">5.3.</strong> DEML (DAG Elevation Markup Language)</a></li><li class="chapter-item expanded "><a href="visual_metronome.html"><strong aria-hidden="true">5.4.</strong> Visual Metronome</a></li><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.5.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="solunar_clock.html"><strong aria-hidden="true">5.6.</strong> Solunar Clock</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.7.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.8.</strong> Pixel Art</a></li></ol></li><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">6.</strong> Blog</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2024-01-04_Utility_Lanyard.html"><strong aria-hidden="true">6.1.</strong> Utility Lanyard</a></li><li class="chapter-item expanded "><a href="2023-10-24_Five_E's_of_Engineering_Priority.html"><strong aria-hidden="true">6.2.</strong> The 5 E's of Engineering Priority</a></li></ol></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </label>
+                        </button>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -174,8 +142,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="crepe-bordeaux"><a class="header" href="#crepe-bordeaux">Crepe Bordeaux</a></h1>
-<p>The cross-platform clipboard cli tool | <a href="https://github.com/Mcmartelle/crepe-bordeaux" title="" target="_blank">GitHub</a> | <a href="https://crates.io/crates/crepe-bordeaux" title="" target="_blank">crates.io</a></p>
-<p><img src="images/crepe_bordeaux.png" alt="crepe bordeaux" /></p>
+<p>The cross-platform clipboard cli tool | <a href="https://github.com/Mcmartelle/crepe-bordeaux">GitHub</a> | <a href="https://crates.io/crates/crepe-bordeaux">crates.io</a></p>
+<p><img src="assets/crepe_bordeaux.png" alt="crepe bordeaux" /></p>
 <h3 id="copy"><a class="header" href="#copy">Copy:</a></h3>
 <pre><code class="language-console">$ echo &quot;foo&quot; | cb
 </code></pre>
@@ -203,17 +171,17 @@ memorable-name
 <h3 id="clear-system-clipboard-and-all-registers"><a class="header" href="#clear-system-clipboard-and-all-registers">Clear system clipboard and all registers:</a></h3>
 <pre><code class="language-console">$ cb clear-all
 </code></pre>
-<h3 id="select-a-register-interactively-with-fzf-or-skim-in-bash"><a class="header" href="#select-a-register-interactively-with-fzf-or-skim-in-bash">Select a register interactively with <a href="https://github.com/junegunn/fzf" title="" target="_blank">fzf</a> (or <a href="https://github.com/lotabout/skim" title="" target="_blank">skim</a>) in bash:</a></h3>
+<h3 id="select-a-register-interactively-with-fzf-or-skim-in-bash"><a class="header" href="#select-a-register-interactively-with-fzf-or-skim-in-bash">Select a register interactively with <a href="https://github.com/junegunn/fzf">fzf</a> (or <a href="https://github.com/lotabout/skim">skim</a>) in bash:</a></h3>
 <pre><code>$ cb $(cb list | fzf)
 </code></pre>
 <h3 id="no-clipboard-available"><a class="header" href="#no-clipboard-available">No clipboard available?</a></h3>
-<p><code>cb</code> will write to a .txt file in the folder determined by Rust’s <a href="https://doc.rust-lang.org/std/env/fn.temp_dir.html" title="" target="_blank">std::env::temp_dir</a></p>
+<p><code>cb</code> will write to a .txt file in the folder determined by Rust's <a href="https://doc.rust-lang.org/std/env/fn.temp_dir.html">std::env::temp_dir</a></p>
 <h3 id="want-to-use-a-different-folder"><a class="header" href="#want-to-use-a-different-folder">Want to use a different folder?</a></h3>
 <p>Set the environment variable <code>CB_DIR</code></p>
 <h3 id="why-though"><a class="header" href="#why-though">Why, though?</a></h3>
-<p>I was enjoying <a href="https://github.com/amilajack/clipboard" title="" target="_blank">Amila’s</a> <code>cb</code> interface on my main computer and had already forked it to add Wayland support with <a href="https://github.com/1Password/arboard" title="" target="_blank">arboard</a>. However, on a minimal install of NixOS with no display/window manager there was no clipboard for it to use, so I made this.</p>
-<h3 id="why-crepe-bordeaux-though"><a class="header" href="#why-crepe-bordeaux-though">Why “crepe-bordeaux”, though?</a></h3>
-<p>The names <a href="https://crates.io/crates/clipboard-cli" title="" target="_blank">clipboard-cli</a> and <a href="https://crates.io/crates/cli-clipboard" title="" target="_blank">cli-clipboard</a> were already taken, and <a href="https://crates.io/crates/tealdeer" title="" target="_blank">tealdeer</a> inspired creativity.</p>
+<p>I was enjoying <a href="https://github.com/amilajack/clipboard">Amila's</a> <code>cb</code> interface on my main computer and had already forked it to add Wayland support with <a href="https://github.com/1Password/arboard">arboard</a>. However, on a minimal install of NixOS with no display/window manager there was no clipboard for it to use, so I made this.</p>
+<h3 id="why-crepe-bordeaux-though"><a class="header" href="#why-crepe-bordeaux-though">Why &quot;crepe-bordeaux&quot;, though?</a></h3>
+<p>The names <a href="https://crates.io/crates/clipboard-cli">clipboard-cli</a> and <a href="https://crates.io/crates/cli-clipboard">cli-clipboard</a> were already taken, and <a href="https://crates.io/crates/tealdeer">tealdeer</a> inspired creativity.</p>
 
                     </main>
 
@@ -223,7 +191,7 @@ memorable-name
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="deml.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="deml.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -237,7 +205,7 @@ memorable-name
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="deml.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="deml.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -279,6 +247,5 @@ memorable-name
         <!-- Custom JS scripts -->
 
 
-    </div>
     </body>
 </html>
