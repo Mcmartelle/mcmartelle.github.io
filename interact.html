@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -7,10 +7,10 @@
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="Matthew Martelle&#x27;s Curriculum Vitae">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -24,25 +24,40 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
     </head>
     <body>
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
-
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -56,55 +71,65 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('no-js')
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            html.classList.add("js");
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
+            sidebar_toggle.checked = sidebar === 'visible';
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="tl_dr.html">TL;DR</a></li><li class="chapter-item expanded "><a href="contact_info.html"><strong aria-hidden="true">1.</strong> Contact Information</a></li><li class="chapter-item expanded "><a href="work_experience.html"><strong aria-hidden="true">2.</strong> Work Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="age_of_learning.html"><strong aria-hidden="true">2.1.</strong> Age of Learning</a></li><li class="chapter-item expanded "><a href="interact.html" class="active"><strong aria-hidden="true">2.2.</strong> InterAct</a></li></ol></li><li class="chapter-item expanded "><a href="education.html"><strong aria-hidden="true">3.</strong> Education</a></li><li class="chapter-item expanded "><a href="skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="personal_projects.html"><strong aria-hidden="true">5.</strong> Personal Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="showyourwork.html"><strong aria-hidden="true">5.1.</strong> SHOW YOUR WORK cascading calculator</a></li><li class="chapter-item expanded "><a href="crepe_bordeaux.html"><strong aria-hidden="true">5.2.</strong> Crepe Bordeaux clipboard CLI tool</a></li><li class="chapter-item expanded "><a href="deml.html"><strong aria-hidden="true">5.3.</strong> DEML (DAG Elevation Markup Language)</a></li><li class="chapter-item expanded "><a href="visual_metronome.html"><strong aria-hidden="true">5.4.</strong> Visual Metronome</a></li><li class="chapter-item expanded "><a href="active_recall_js.html"><strong aria-hidden="true">5.5.</strong> Active Recall JS</a></li><li class="chapter-item expanded "><a href="solunar_clock.html"><strong aria-hidden="true">5.6.</strong> Solunar Clock</a></li><li class="chapter-item expanded "><a href="mind_monsoon.html"><strong aria-hidden="true">5.7.</strong> Mind Monsoon</a></li><li class="chapter-item expanded "><a href="pixel_art.html"><strong aria-hidden="true">5.8.</strong> Pixel Art</a></li></ol></li><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">6.</strong> Blog</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2024-01-04_Utility_Lanyard.html"><strong aria-hidden="true">6.1.</strong> Utility Lanyard</a></li><li class="chapter-item expanded "><a href="2023-10-24_Five_E's_of_Engineering_Priority.html"><strong aria-hidden="true">6.2.</strong> The 5 E's of Engineering Priority</a></li></ol></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -143,7 +168,7 @@
                     <main>
                         <h1 id="interact"><a class="header" href="#interact">InterAct</a></h1>
 <p>Ventura, CA &amp; Kenai, Alaska</p>
-<p><a href="https://www.linkedin.com/company/interact-projects">InterAct LinkedIn</a></p>
+<p><a href="https://www.linkedin.com/company/interact-projects" title="" target="_blank">InterAct LinkedIn</a></p>
 <h2 id="projects"><a class="header" href="#projects">Projects</a></h2>
 <h3 id="conoco-phillips-alaska"><a class="header" href="#conoco-phillips-alaska">Conoco Phillips Alaska</a></h3>
 <p>Verified and updated the piping and instrumentation diagrams of systems with pressure safety valves at the:</p>
@@ -165,7 +190,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="education.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="education.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -179,29 +204,13 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="education.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="education.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
@@ -221,5 +230,6 @@
         <!-- Custom JS scripts -->
 
 
+    </div>
     </body>
 </html>

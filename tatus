@@ -1,0 +1,508 @@
+[1m[93mcss/chrome.css[39m[0m[2m --- 1/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m 1 [0m[2m1 [0m/* CSS for UI elements (a.k.a. chrome) */
+[2m 2 [0m[2m2 [0m
+[91;1m 3 [0m[2m. [0m[91;1m@[0m[91;1mimport[0m[91;1m [0m[91;1m'[0m[91;1mvariables[0m[91;1m.[0m[91;1mcss[0m[91;1m'[0m[91;1m;[0m
+[91;1m 4 [0m[2m. [0m
+[91;1m 5 [0m[2m. [0m[91;1m:[0m[91;1m:[0m[91;1m-webkit-scrollbar[0m[91;1m [0m[91;1m{[0m
+[91;1m 6 [0m[2m. [0m[91;1m [0m[91;1m [0m[91;1m [0m[91;1m [0m[91;1mbackground[0m[91;1m:[0m[91;1m [0m[91;1mvar[0m[91;1m([0m[91;1m--bg[0m[91;1m)[0m[91;1m;[0m
+[91;1m 7 [0m[2m. [0m[91;1m}[0m
+[91;1m 8 [0m[2m. [0m[91;1m:[0m[91;1m:[0m[91;1m-webkit-scrollbar-thumb[0m[91;1m [0m[91;1m{[0m
+[91;1m 9 [0m[2m. [0m[91;1m [0m[91;1m [0m[91;1m [0m[91;1m [0m[91;1mbackground[0m[91;1m:[0m[91;1m [0m[91;1mvar[0m[91;1m([0m[91;1m--scrollbar[0m[91;1m)[0m[91;1m;[0m
+[91;1m10 [0m[2m. [0m[91;1m}[0m
+[2m11 [0m[2m3 [0mhtml {
+[2m12 [0m[2m4 [0m    scrollbar-color: var(--scrollbar) var(--bg);
+[2m13 [0m[2m5 [0m}
+
+[1mcss/chrome.css[0m[2m --- 2/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m18 [0m[2m10 [0m    color: var(--links);
+[2m19 [0m[2m11 [0m}
+[2m20 [0m[2m12 [0m
+[2m.. [0m[92;1m13 [0m[92;1m/[0m[92;1m*[0m
+[2m.. [0m[92;1m14 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbody-container[0m[92;1m [0m[92;1mis[0m[92;1m [0m[92;1mnecessary[0m[92;1m [0m[92;1mbecause[0m[92;1m [0m[92;1mmobile[0m[92;1m [0m[92;1mbrowsers[0m[92;1m [0m[92;1mdon[0m[92;1m'[0m[92;1mt[0m[92;1m [0m[92;1mseem[0m[92;1m [0m[92;1mto[0m[92;1m [0m[92;1mlike[0m
+[2m.. [0m[92;1m15 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1moverflow-x[0m[92;1m [0m[92;1mon[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mbody[0m[92;1m [0m[92;1mtag[0m[92;1m [0m[92;1mwhen[0m[92;1m [0m[92;1mthere[0m[92;1m [0m[92;1mis[0m[92;1m [0m[92;1ma[0m[92;1m [0m[92;1m<[0m[92;1mmeta[0m[92;1m [0m[92;1mname[0m[92;1m=[0m[92;1m"[0m[92;1mviewport[0m[92;1m"[0m[92;1m>[0m[92;1m [0m[92;1mtag[0m[92;1m.[0m
+[2m.. [0m[92;1m16 [0m[92;1m*[0m[92;1m/[0m
+[2m.. [0m[92;1m17 [0m[92;1m#[0m[92;1mbody-container[0m[92;1m [0m[92;1m{[0m
+[2m.. [0m[92;1m18 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m
+[2m.. [0m[92;1m19 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mThis[0m[92;1m [0m[92;1mis[0m[92;1m [0m[92;1mused[0m[92;1m [0m[92;1mwhen[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1msidebar[0m[92;1m [0m[92;1mpushes[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mbody[0m[92;1m [0m[92;1mcontent[0m[92;1m [0m[92;1moff[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mside[0m[92;1m [0m[92;1mof[0m
+[2m.. [0m[92;1m20 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mscreen[0m[92;1m [0m[92;1mon[0m[92;1m [0m[92;1msmall[0m[92;1m [0m[92;1mscreens[0m[92;1m.[0m[92;1m [0m[92;1mWithout[0m[92;1m [0m[92;1mit[0m[92;1m,[0m[92;1m [0m[92;1mdragging[0m[92;1m [0m[92;1mon[0m[92;1m [0m[92;1mmobile[0m[92;1m [0m[92;1mSafari[0m
+[2m.. [0m[92;1m21 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mwill[0m[92;1m [0m[92;1mwant[0m[92;1m [0m[92;1mto[0m[92;1m [0m[92;1mreposition[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mviewport[0m[92;1m [0m[92;1min[0m[92;1m [0m[92;1ma[0m[92;1m [0m[92;1mweird[0m[92;1m [0m[92;1mway[0m[92;1m.[0m
+[2m.. [0m[92;1m22 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m.. [0m[92;1m23 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1moverflow-x[0m[92;1m:[0m[92;1m [0m[92;1mclip[0m[92;1m;[0m
+[2m.. [0m[92;1m24 [0m[92;1m}[0m
+[2m.. [0m[92;1m25 [0m
+[2m21 [0m[2m26 [0m/* Menu Bar */
+[2m22 [0m[2m27 [0m
+[2m23 [0m[2m28 [0m#menu-bar,
+
+[1mcss/chrome.css[0m[2m --- 3/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m30 [0m    display: flex;                                [2m35 [0m    display: flex;
+[2m31 [0m    flex-wrap: wrap;                              [2m36 [0m    flex-wrap: wrap;
+[2m32 [0m    background-color: var(--bg);                  [2m37 [0m    background-color: var(--bg);
+[91;1m33 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mborder-bottom-color[0m[91m:[0m[91m [0m[91mvar[0m[91m([0m[91m--bg[0m[91m)[0m[91m;[0m               [92;1m38 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mborder-block-end-color[0m[92m:[0m[92m [0m[92mvar[0m[92m([0m[92m--bg[0m[92m)[0m[92m;[0m
+[91;1m34 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mborder-bottom-width[0m[91m:[0m[91m [0m[91m1px[0m[91m;[0m                     [92;1m39 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mborder-block-end-width[0m[92m:[0m[92m [0m[92m1px[0m[92m;[0m
+[91;1m35 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mborder-bottom-style[0m[91m:[0m[91m [0m[91msolid[0m[91m;[0m                   [92;1m40 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mborder-block-end-style[0m[92m:[0m[92m [0m[92msolid[0m[92m;[0m
+[2m36 [0m}                                                 [2m41 [0m}
+[2m37 [0m#menu-bar.sticky,                                 [2m42 [0m#menu-bar.sticky,
+[91;1m38 [0m[91;1m.[0m[91;1mjs[0m[91;1m [0m[91m#[0m[91mmenu-bar-hover-placeholder[0m[91m:[0m[91mhover[0m[91m [0m[91m+[0m[91m [0m[91m#[0m[91mmenu-bar[0m [92;1m43 [0m[92m#[0m[92mmenu-bar-hover-placeholder[0m[92m:[0m[92mhover[0m[92m [0m[92m+[0m[92m [0m[92m#[0m[92mmenu-bar[0m[92m,[0m
+[91;1m[2m.. [0m[0m[91m,[0m                                                 [92;1m[2m.. [0m[0m
+[91;1m39 [0m[91;1m.[0m[91;1mjs[0m[91;1m [0m[91m#[0m[91mmenu-bar[0m[91m:[0m[91mhover[0m[91m,[0m                              [92;1m44 [0m[92m#[0m[92mmenu-bar[0m[92m:[0m[92mhover[0m[92m,[0m
+[91;1m40 [0m[91;1m.[0m[91;1mjs[0m[91m.[0m[91msidebar-visible[0m[91m [0m[91m#[0m[91mmenu-bar[0m[91m [0m[91m{[0m                   [92;1m45 [0m[92;1mhtml[0m[92m.[0m[92msidebar-visible[0m[92m [0m[92m#[0m[92mmenu-bar[0m[92m [0m[92m{[0m
+[2m41 [0m    position: -webkit-sticky;                     [2m46 [0m    position: -webkit-sticky;
+[2m42 [0m    position: sticky;                             [2m47 [0m    position: sticky;
+[2m43 [0m    top: 0 !important;                            [2m48 [0m    top: 0 !important;
+
+[1mcss/chrome.css[0m[2m --- 4/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m49 [0m    height: var(--menu-bar-height);               [2m54 [0m    height: var(--menu-bar-height);
+[2m50 [0m}                                                 [2m55 [0m}
+[2m51 [0m#menu-bar.bordered {                              [2m56 [0m#menu-bar.bordered {
+[91;1m52 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mborder-bottom-color[0m[91m:[0m[91m [0m[91mvar[0m[91m([0m[91m--table-border-color[0m [92;1m57 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mborder-block-end-color[0m[92m:[0m[92m [0m[92mvar[0m[92m([0m[92m--table-border-co[0m
+[91;1m[2m.. [0m[0m[91m)[0m[91m;[0m                                                [92;1m[2m.. [0m[0m[92mlor[0m[92m)[0m[92m;[0m
+[2m53 [0m}                                                 [2m58 [0m}
+[2m54 [0m#menu-bar i, #menu-bar .icon-button {             [2m59 [0m#menu-bar i, #menu-bar .icon-button {
+[2m55 [0m    position: relative;                           [2m60 [0m    position: relative;
+
+[1mcss/chrome.css[0m[2m --- 5/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m86 [0m    display: flex;                                [2m91 [0m    display: flex;
+[2m87 [0m    margin: 0 5px;                                [2m92 [0m    margin: 0 5px;
+[2m88 [0m}                                                 [2m93 [0m}
+[91;1m89 [0m[91m.[0m[91;1mno-js[0m[91m [0m[91m.[0m[91mleft-buttons[0m[91m [0m[91m{[0m                            [92;1m94 [0m[92;1mhtml[0m[92;1m:[0m[92;1mnot[0m[92;1m([0m[92m.[0m[92;1mjs[0m[92;1m)[0m[92m [0m[92m.[0m[92mleft-buttons[0m[92m [0m[92;1mbutton[0m[92;1m [0m[92m{[0m
+[2m90 [0m    display: none;                                [2m95 [0m    display: none;
+[2m91 [0m}                                                 [2m96 [0m}
+[2m92 [0m                                                  [2m97 [0m
+
+[1mcss/chrome.css[0m[2m --- 6/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m102 [0m    overflow: hidden;                            [2m107 [0m    overflow: hidden;
+[2m103 [0m    text-overflow: ellipsis;                     [2m108 [0m    text-overflow: ellipsis;
+[2m104 [0m}                                                [2m109 [0m}
+[91;1m105 [0m[91m.[0m[91;1mjs[0m[91;1m [0m[91;1m.[0m[91mmenu-title[0m[91m [0m[91m{[0m                                [92;1m110 [0m[92m.[0m[92mmenu-title[0m[92m [0m[92m{[0m
+[2m106 [0m    cursor: pointer;                             [2m111 [0m    cursor: pointer;
+[2m107 [0m}                                                [2m112 [0m}
+[2m108 [0m                                                 [2m113 [0m
+
+[1mcss/chrome.css[0m[2m --- 7/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m153 [0m}                                                [2m158 [0m}
+[2m154 [0m                                                 [2m159 [0m
+[2m155 [0m.nav-wrapper {                                   [2m160 [0m.nav-wrapper {
+[91;1m156 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-top[0m[91m:[0m[91m [0m[91m50px[0m[91m;[0m                            [92;1m161 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-block-start[0m[92m:[0m[92m [0m[92m50px[0m[92m;[0m
+[2m157 [0m    display: none;                               [2m162 [0m    display: none;
+[2m158 [0m}                                                [2m163 [0m}
+[2m159 [0m                                                 [2m164 [0m
+
+[1mcss/chrome.css[0m[2m --- 8/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m166 [0m    background-color: var(--sidebar-bg);         [2m171 [0m    background-color: var(--sidebar-bg);
+[2m167 [0m}                                                [2m172 [0m}
+[2m168 [0m                                                 [2m173 [0m
+[2m... [0m                                                 [92;1m174 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mOnly[0m[92;1m [0m[92;1mFirefox[0m[92;1m [0m[92;1msupports[0m[92;1m [0m[92;1mflow-relative[0m[92;1m [0m[92;1mvalues[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[91;1m169 [0m[91m.[0m[91mprevious[0m[91m [0m[91m{[0m                                      [92;1m175 [0m[92m.[0m[92mprevious[0m[92m [0m[92m{[0m[92;1m [0m[92;1mfloat[0m[92;1m:[0m[92;1m [0m[92;1mleft[0m[92;1m;[0m[92;1m [0m[92;1m}[0m
+[91;1m170 [0m[91m [0m[91m [0m[91m [0m[91;1m [0m[91mfloat[0m[91m:[0m[91m [0m[91;1mleft[0m[91m;[0m                                 [92;1m176 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92m [0m[92;1m.[0m[92;1mprevious[0m[92m [0m[92;1m{[0m[92m [0m[92mfloat[0m[92m:[0m[92m [0m[92;1mright[0m[92m;[0m[92;1m [0m[92m}[0m
+[91;1m171 [0m[91m}[0m                                                [2m... [0m
+[2m172 [0m                                                 [2m177 [0m
+[2m... [0m                                                 [92;1m178 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mOnly[0m[92;1m [0m[92;1mFirefox[0m[92;1m [0m[92;1msupports[0m[92;1m [0m[92;1mflow-relative[0m[92;1m [0m[92;1mvalues[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m173 [0m.next {                                          [2m179 [0m.next {
+[2m174 [0m    float: right;                                [2m180 [0m    float: right;
+[2m175 [0m    right: var(--page-padding);                  [2m181 [0m    right: var(--page-padding);
+[2m176 [0m}                                                [2m182 [0m}
+[2m... [0m                                                 [92;1m183 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m.[0m[92;1mnext[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m184 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mfloat[0m[92;1m:[0m[92;1m [0m[92;1mleft[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m185 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mright[0m[92;1m:[0m[92;1m [0m[92;1munset[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m186 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mleft[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--page-padding[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m187 [0m[92;1m}[0m
+[2m177 [0m                                                 [2m188 [0m
+[2m... [0m                                                 [92;1m189 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mUse[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mcorrect[0m[92;1m [0m[92;1mbuttons[0m[92;1m [0m[92;1mfor[0m[92;1m [0m[92;1mRTL[0m[92;1m [0m[92;1mlayouts[0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m190 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m.[0m[92;1mprevious[0m[92;1m [0m[92;1mi[0m[92;1m.[0m[92;1mfa-angle-left[0m[92;1m:[0m[92;1mbefore[0m[92;1m [0m[92;1m{[0m[92;1mcont[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1ment[0m[92;1m:[0m[92;1m"[0m[92;1m\[0m[92;1mf105[0m[92;1m"[0m[92;1m;[0m[92;1m}[0m
+[2m... [0m                                                 [92;1m191 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m.[0m[92;1mnext[0m[92;1m [0m[92;1mi[0m[92;1m.[0m[92;1mfa-angle-right[0m[92;1m:[0m[92;1mbefore[0m[92;1m [0m[92;1m{[0m[92;1m [0m[92;1mconten[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mt[0m[92;1m:[0m[92;1m"[0m[92;1m\[0m[92;1mf104[0m[92;1m"[0m[92;1m;[0m[92;1m [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m192 [0m
+[2m178 [0m@media only screen and (max-width: 1080px) {     [2m193 [0m@media only screen and (max-width: 1080px) {
+[2m179 [0m    .nav-wide-wrapper { display: none; }         [2m194 [0m    .nav-wide-wrapper { display: none; }
+[2m180 [0m    .nav-wrapper { display: block; }             [2m195 [0m    .nav-wrapper { display: block; }
+[2m181 [0m}                                                [2m196 [0m}
+[2m182 [0m                                                 [2m197 [0m
+[2m... [0m                                                 [92;1m198 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1msidebar-visible[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m183 [0m@media only screen and (max-width: 1380px) {     [2m199 [0m@media only screen and (max-width: 1380px) {
+[91;1m184 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91m.[0m[91;1msidebar-visible[0m[91m [0m[91m.[0m[91mnav-wide-wrapper[0m[91m [0m[91m{[0m[91m [0m[91mdisplay[0m [92;1m200 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mchecked[0m[92;1m [0m[92;1m~[0m[92;1m [0m[92m.[0m[92;1mpage-wrapp[0m
+[91;1m[2m... [0m[0m[91m:[0m[91m [0m[91mnone[0m[91m;[0m[91m [0m[91m}[0m                                        [92;1m[2m... [0m[0m[92;1mer[0m[92m [0m[92m.[0m[92mnav-wide-wrapper[0m[92m [0m[92m{[0m[92m [0m[92mdisplay[0m[92m:[0m[92m [0m[92mnone[0m[92m;[0m[92m [0m[92m}[0m
+[91;1m185 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91m.[0m[91;1msidebar-visible[0m[91m [0m[91m.[0m[91mnav-wrapper[0m[91m [0m[91m{[0m[91m [0m[91mdisplay[0m[91m:[0m[91m [0m[91mblo[0m [92;1m201 [0m[92m [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mchecked[0m[92m [0m[92;1m~[0m[92m [0m[92m.[0m[92;1mpage-wrapp[0m
+[91;1m[2m... [0m[0m[91mck[0m[91m;[0m[91m [0m[91m}[0m                                            [92;1m[2m... [0m[0m[92;1mer[0m[92m [0m[92m.[0m[92mnav-wrapper[0m[92m [0m[92m{[0m[92m [0m[92mdisplay[0m[92m:[0m[92m [0m[92mblock[0m[92m;[0m[92m [0m[92m}[0m
+[2m186 [0m}                                                [2m202 [0m}
+[2m187 [0m                                                 [2m203 [0m
+[2m188 [0m/* Inline code */                                [2m204 [0m/* Inline code */
+
+[1mcss/chrome.css[0m[2m --- 9/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m229 [0m    background-color: var(--theme-hover);        [2m245 [0m    background-color: var(--theme-hover);
+[2m230 [0m}                                                [2m246 [0m}
+[2m231 [0mpre > .buttons i {                               [2m247 [0mpre > .buttons i {
+[91;1m232 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-left[0m[91m:[0m[91m [0m[91m8px[0m[91m;[0m                            [92;1m248 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-start[0m[92m:[0m[92m [0m[92m8px[0m[92m;[0m
+[2m233 [0m}                                                [2m249 [0m}
+[2m234 [0mpre > .buttons button {                          [2m250 [0mpre > .buttons button {
+[2m235 [0m    cursor: inherit;                             [2m251 [0m    cursor: inherit;
+[2m236 [0m    margin: 0px 5px;                             [2m252 [0m    margin: 0px 5px;
+[91;1m237 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mpadding[0m[91m:[0m[91m [0m[91m3px[0m[91m [0m[91m5px[0m[91m;[0m                            [92;1m253 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mpadding[0m[92m:[0m[92m [0m[92;1m4px[0m[92;1m [0m[92;1m4px[0m[92;1m [0m[92m3px[0m[92m [0m[92m5px[0m[92m;[0m
+[91;1m238 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mfont-size[0m[91m:[0m[91m [0m[91;1m14px[0m[91m;[0m                             [92;1m254 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mfont-size[0m[92m:[0m[92m [0m[92;1m23px[0m[92m;[0m
+[2m239 [0m                                                 [2m255 [0m
+[2m240 [0m    border-style: solid;                         [2m256 [0m    border-style: solid;
+[2m241 [0m    border-width: 1px;                           [2m257 [0m    border-width: 1px;
+
+[1mcss/chrome.css[0m[2m --- 10/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m246 [0m[2m262 [0m    transition-property: color,border-color,background-color;
+[2m247 [0m[2m263 [0m    color: var(--icons);
+[2m248 [0m[2m264 [0m}
+[2m... [0m[92;1m265 [0m
+[2m... [0m[92;1m266 [0m[92;1mpre[0m[92;1m [0m[92;1m>[0m[92;1m [0m[92;1m.[0m[92;1mbuttons[0m[92;1m [0m[92;1mbutton[0m[92;1m.[0m[92;1mclip-button[0m[92;1m [0m[92;1m{[0m
+[2m... [0m[92;1m267 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mpadding[0m[92;1m:[0m[92;1m [0m[92;1m2px[0m[92;1m [0m[92;1m4px[0m[92;1m [0m[92;1m0px[0m[92;1m [0m[92;1m6px[0m[92;1m;[0m
+[2m... [0m[92;1m268 [0m[92;1m}[0m
+[2m... [0m[92;1m269 [0m[92;1mpre[0m[92;1m [0m[92;1m>[0m[92;1m [0m[92;1m.[0m[92;1mbuttons[0m[92;1m [0m[92;1mbutton[0m[92;1m.[0m[92;1mclip-button[0m[92;1m:[0m[92;1m:[0m[92;1mbefore[0m[92;1m [0m[92;1m{[0m
+[2m... [0m[92;1m270 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mclipboard[0m[92;1m [0m[92;1mimage[0m[92;1m [0m[92;1mfrom[0m[92;1m [0m[92;1mocticons[0m[92;1m [0m[92;1m([0m[92;1mhttps[0m[92;1m:[0m[92;1m/[0m[92;1m/[0m[92;1mgithub[0m[92;1m.[0m[92;1mcom[0m[92;1m/[0m[92;1mprimer[0m[92;1m/[0m[92;1mocticons[0m[92;1m/[0m[92;1mtree[0m[92;1m/[0m[92;1mv2[0m[92;1m.[0m[92;1m0[0m[92;1m.[0m[92;1m0[0m[92;1m)[0m[92;1m [0m[92;1mMIT[0m[92;1m [0m[92;1mlicense[0m
+[2m... [0m[92;1m271 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m[92;1m272 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mcontent[0m[92;1m:[0m[92;1m [0m[92;1murl[0m[92;1m([0m[92;1m'[0m[92;1mdata[0m[92;1m:[0m[92;1mimage[0m[92;1m/[0m[92;1msvg[0m[92;1m+[0m[92;1mxml[0m[92;1m,[0m[92;1m<[0m[92;1msvg[0m[92;1m [0m[92;1mwidth[0m[92;1m=[0m[92;1m"[0m[92;1m21[0m[92;1m"[0m[92;1m [0m[92;1mheight[0m[92;1m=[0m[92;1m"[0m[92;1m20[0m[92;1m"[0m[92;1m [0m[92;1mviewBox[0m[92;1m=[0m[92;1m"[0m[92;1m0[0m[92;1m [0m[92;1m0[0m[92;1m [0m[92;1m24[0m[92;1m [0m[92;1m25[0m[92;1m"[0m[92;1m [0m[92;1m\[0m
+[2m... [0m[92;1m273 [0m[92;1mxmlns[0m[92;1m=[0m[92;1m"[0m[92;1mhttp[0m[92;1m:[0m[92;1m/[0m[92;1m/[0m[92;1mwww[0m[92;1m.[0m[92;1mw3[0m[92;1m.[0m[92;1morg[0m[92;1m/[0m[92;1m2000[0m[92;1m/[0m[92;1msvg[0m[92;1m"[0m[92;1m [0m[92;1maria-label[0m[92;1m=[0m[92;1m"[0m[92;1mCopy[0m[92;1m [0m[92;1mto[0m[92;1m [0m[92;1mclipboard[0m[92;1m"[0m[92;1m>[0m[92;1m\[0m
+[2m... [0m[92;1m274 [0m[92;1m<[0m[92;1mpath[0m[92;1m [0m[92;1md[0m[92;1m=[0m[92;1m"[0m[92;1mM18[0m[92;1m [0m[92;1m20h2v3c0[0m[92;1m [0m[92;1m1-1[0m[92;1m [0m[92;1m2-2[0m[92;1m [0m[92;1m2H2c-[0m[92;1m.[0m[92;1m998[0m[92;1m [0m[92;1m0-2-1-2-2V5c0-[0m[92;1m.[0m[92;1m911[0m[92;1m.[0m[92;1m755-1[0m[92;1m.[0m[92;1m667[0m[92;1m [0m[92;1m1[0m[92;1m.[0m[92;1m667-1[0m[92;1m.[0m[92;1m667h5A3[0m[92;1m.[0m[92;1m323[0m[92;1m [0m[92;1m3[0m[92;1m.[0m[92;1m323[0m[92;1m [0m[92;1m0[0m[92;1m [0m[92;1m\[0m
+[2m... [0m[92;1m275 [0m[92;1m0110[0m[92;1m [0m[92;1m0a3[0m[92;1m.[0m[92;1m323[0m[92;1m [0m[92;1m3[0m[92;1m.[0m[92;1m323[0m[92;1m [0m[92;1m0[0m[92;1m [0m[92;1m013[0m[92;1m.[0m[92;1m333[0m[92;1m [0m[92;1m3[0m[92;1m.[0m[92;1m333h5C19[0m[92;1m.[0m[92;1m245[0m[92;1m [0m[92;1m3[0m[92;1m.[0m[92;1m333[0m[92;1m [0m[92;1m20[0m[92;1m [0m[92;1m4[0m[92;1m.[0m[92;1m09[0m[92;1m [0m[92;1m20[0m[92;1m [0m[92;1m5v8[0m[92;1m.[0m[92;1m333h-2V9H2v14h16v-3zM3[0m[92;1m [0m[92;1m\[0m
+[2m... [0m[92;1m276 [0m[92;1m7h14c0-[0m[92;1m.[0m[92;1m911-[0m[92;1m.[0m[92;1m793-1[0m[92;1m.[0m[92;1m667-1[0m[92;1m.[0m[92;1m75-1[0m[92;1m.[0m[92;1m667H13[0m[92;1m.[0m[92;1m5c-[0m[92;1m.[0m[92;1m957[0m[92;1m [0m[92;1m0-1[0m[92;1m.[0m[92;1m75-[0m[92;1m.[0m[92;1m755-1[0m[92;1m.[0m[92;1m75-1[0m[92;1m.[0m[92;1m666C11[0m[92;1m.[0m[92;1m75[0m[92;1m [0m[92;1m2[0m[92;1m.[0m[92;1m755[0m[92;1m [0m[92;1m10[0m[92;1m.[0m[92;1m957[0m[92;1m [0m[92;1m2[0m[92;1m [0m[92;1m10[0m[92;1m [0m[92;1m\[0m
+[2m... [0m[92;1m277 [0m[92;1m2s-1[0m[92;1m.[0m[92;1m75[0m[92;1m.[0m[92;1m755-1[0m[92;1m.[0m[92;1m75[0m[92;1m [0m[92;1m1[0m[92;1m.[0m[92;1m667c0[0m[92;1m [0m[92;1m.[0m[92;1m911-[0m[92;1m.[0m[92;1m793[0m[92;1m [0m[92;1m1[0m[92;1m.[0m[92;1m666-1[0m[92;1m.[0m[92;1m75[0m[92;1m [0m[92;1m1[0m[92;1m.[0m[92;1m666H4[0m[92;1m.[0m[92;1m75C3[0m[92;1m.[0m[92;1m793[0m[92;1m [0m[92;1m5[0m[92;1m.[0m[92;1m333[0m[92;1m [0m[92;1m3[0m[92;1m [0m[92;1m6[0m[92;1m.[0m[92;1m09[0m[92;1m [0m[92;1m3[0m[92;1m [0m[92;1m7z[0m[92;1m"[0m[92;1m/[0m[92;1m>[0m[92;1m\[0m
+[2m... [0m[92;1m278 [0m[92;1m<[0m[92;1mpath[0m[92;1m [0m[92;1md[0m[92;1m=[0m[92;1m"[0m[92;1mM4[0m[92;1m [0m[92;1m19h6v2H4zM12[0m[92;1m [0m[92;1m11H4v2h8zM4[0m[92;1m [0m[92;1m17h4v-2H4zM15[0m[92;1m [0m[92;1m15v-3l-4[0m[92;1m.[0m[92;1m5[0m[92;1m [0m[92;1m4[0m[92;1m.[0m[92;1m5L15[0m[92;1m [0m[92;1m21v-3l8[0m[92;1m.[0m[92;1m027-[0m[92;1m.[0m[92;1m032L23[0m[92;1m [0m[92;1m15z[0m[92;1m"[0m[92;1m/[0m[92;1m>[0m[92;1m\[0m
+[2m... [0m[92;1m279 [0m[92;1m<[0m[92;1m/[0m[92;1msvg[0m[92;1m>[0m[92;1m'[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m[92;1m280 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mfilter[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--copy-button-filter[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m[92;1m281 [0m[92;1m}[0m
+[2m... [0m[92;1m282 [0m[92;1mpre[0m[92;1m [0m[92;1m>[0m[92;1m [0m[92;1m.[0m[92;1mbuttons[0m[92;1m [0m[92;1mbutton[0m[92;1m.[0m[92;1mclip-button[0m[92;1m:[0m[92;1mhover[0m[92;1m:[0m[92;1m:[0m[92;1mbefore[0m[92;1m [0m[92;1m{[0m
+[2m... [0m[92;1m283 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mfilter[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--copy-button-filter-hover[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m[92;1m284 [0m[92;1m}[0m
+[2m... [0m[92;1m285 [0m
+[2m249 [0m[2m286 [0m@media (pointer: coarse) {
+[2m250 [0m[2m287 [0m    pre > .buttons button {
+[2m251 [0m[2m288 [0m        /* On mobile, make it easier to tap buttons. */
+[2m252 [0m[2m289 [0m        padding: 0.3rem 1rem;
+[2m253 [0m[2m290 [0m    }
+[2m... [0m[92;1m291 [0m
+[2m... [0m[92;1m292 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m.[0m[92;1msidebar-resize-indicator[0m[92;1m [0m[92;1m{[0m
+[2m... [0m[92;1m293 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mHide[0m[92;1m [0m[92;1mresize[0m[92;1m [0m[92;1mindicator[0m[92;1m [0m[92;1mon[0m[92;1m [0m[92;1mdevices[0m[92;1m [0m[92;1mwith[0m[92;1m [0m[92;1mlimited[0m[92;1m [0m[92;1maccuracy[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m[92;1m294 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mdisplay[0m[92;1m:[0m[92;1m [0m[92;1mnone[0m[92;1m;[0m
+[2m... [0m[92;1m295 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m}[0m
+[2m254 [0m[2m296 [0m}
+[2m255 [0m[2m297 [0mpre > code {
+[2m... [0m[92;1m298 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mdisplay[0m[92;1m:[0m[92;1m [0m[92;1mblock[0m[92;1m;[0m
+[2m256 [0m[2m299 [0m    padding: 1rem;
+[2m257 [0m[2m300 [0m}
+[2m258 [0m[2m301 [0m
+
+[1mcss/chrome.css[0m[2m --- 11/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m266 [0m}                                                [2m309 [0m}
+[2m267 [0m                                                 [2m310 [0m
+[2m268 [0mpre > .result {                                  [2m311 [0mpre > .result {
+[91;1m269 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-top[0m[91m:[0m[91m [0m[91m10px[0m[91m;[0m                            [92;1m312 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-block-start[0m[92m:[0m[92m [0m[92m10px[0m[92m;[0m
+[2m270 [0m}                                                [2m313 [0m}
+[2m271 [0m                                                 [2m314 [0m
+[2m272 [0m/* Search */                                     [2m315 [0m/* Search */
+
+[1mcss/chrome.css[0m[2m --- 12/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m277 [0m                                                 [2m320 [0m
+[2m278 [0mmark {                                           [2m321 [0mmark {
+[2m279 [0m    border-radius: 2px;                          [2m322 [0m    border-radius: 2px;
+[91;1m280 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mpadding[0m[91m:[0m[91m [0m[91m0[0m[91m [0m[91;1m3px[0m[91m [0m[91m1px[0m[91m [0m[91m3px[0m[91m;[0m                      [92;1m323 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mpadding-block-start[0m[92m:[0m[92m [0m[92m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m324 [0m[92m [0m[92m [0m[92;1m [0m[92;1m [0m[92;1mpadding-block-end[0m[92;1m:[0m[92;1m [0m[92m1px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m325 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mpadding-inline-start[0m[92;1m:[0m[92;1m [0m[92m3px[0m[92m;[0m
+[91;1m281 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin[0m[91m:[0m[91m [0m[91m0[0m[91m [0m[91m-3px[0m[91m [0m[91;1m-1px[0m[91m [0m[91m-3px[0m[91m;[0m                    [92;1m326 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mpadding-inline-end[0m[92m:[0m[92m [0m[92;1m3px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m327 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-block-start[0m[92;1m:[0m[92;1m [0m[92m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m328 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-block-end[0m[92;1m:[0m[92;1m [0m[92;1m-1px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m329 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-start[0m[92;1m:[0m[92;1m [0m[92m-3px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m330 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-end[0m[92;1m:[0m[92m [0m[92m-3px[0m[92m;[0m
+[2m282 [0m    background-color: var(--search-mark-bg);     [2m331 [0m    background-color: var(--search-mark-bg);
+[2m283 [0m    transition: background-color 300ms linear;   [2m332 [0m    transition: background-color 300ms linear;
+[2m284 [0m    cursor: pointer;                             [2m333 [0m    cursor: pointer;
+
+[1mcss/chrome.css[0m[2m --- 13/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m290 [0m}                                                [2m339 [0m}
+[2m291 [0m                                                 [2m340 [0m
+[2m292 [0m.searchbar-outer {                               [2m341 [0m.searchbar-outer {
+[91;1m293 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-left[0m[91m:[0m[91m [0m[91mauto[0m[91m;[0m                           [92;1m342 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-start[0m[92m:[0m[92m [0m[92mauto[0m[92m;[0m
+[91;1m294 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-right[0m[91m:[0m[91m [0m[91mauto[0m[91m;[0m                          [92;1m343 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-end[0m[92m:[0m[92m [0m[92mauto[0m[92m;[0m
+[2m295 [0m    max-width: var(--content-max-width);         [2m344 [0m    max-width: var(--content-max-width);
+[2m296 [0m}                                                [2m345 [0m}
+[2m297 [0m                                                 [2m346 [0m
+[2m298 [0m#searchbar {                                     [2m347 [0m#searchbar {
+[2m299 [0m    width: 100%;                                 [2m348 [0m    width: 100%;
+[91;1m300 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin[0m[91m:[0m[91m [0m[91m5px[0m[91m [0m[91mauto[0m[91m [0m[91;1m0px[0m[91m [0m[91mauto[0m[91m;[0m                   [92;1m349 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-block-start[0m[92m:[0m[92m [0m[92m5px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m350 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-block-end[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m351 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-start[0m[92;1m:[0m[92;1m [0m[92mauto[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m352 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-end[0m[92;1m:[0m[92m [0m[92mauto[0m[92m;[0m
+[2m301 [0m    padding: 10px 16px;                          [2m353 [0m    padding: 10px 16px;
+[2m302 [0m    transition: box-shadow 300ms ease-in-out;    [2m354 [0m    transition: box-shadow 300ms ease-in-out;
+[2m303 [0m    border: 1px solid var(--searchbar-border-col [2m355 [0m    border: 1px solid var(--searchbar-border-col
+[2m[2m    [0m[0mor);                                             [2m[2m    [0m[0mor);
+
+[1mcss/chrome.css[0m[2m --- 14/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m313 [0m.searchresults-header {                          [2m365 [0m.searchresults-header {
+[2m314 [0m    font-weight: bold;                           [2m366 [0m    font-weight: bold;
+[2m315 [0m    font-size: 1em;                              [2m367 [0m    font-size: 1em;
+[91;1m316 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mpadding[0m[91m:[0m[91m [0m[91m18px[0m[91m [0m[91;1m0[0m[91m [0m[91m0[0m[91m [0m[91m5px[0m[91m;[0m                       [92;1m368 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mpadding-block-start[0m[92m:[0m[92m [0m[92m18px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m369 [0m[92m [0m[92m [0m[92;1m [0m[92;1m [0m[92;1mpadding-block-end[0m[92;1m:[0m[92;1m [0m[92m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m370 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mpadding-inline-start[0m[92;1m:[0m[92;1m [0m[92m5px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m371 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mpadding-inline-end[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92m;[0m
+[2m317 [0m    color: var(--searchresults-header-fg);       [2m372 [0m    color: var(--searchresults-header-fg);
+[2m318 [0m}                                                [2m373 [0m}
+[2m319 [0m                                                 [2m374 [0m
+[2m320 [0m.searchresults-outer {                           [2m375 [0m.searchresults-outer {
+[91;1m321 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-left[0m[91m:[0m[91m [0m[91mauto[0m[91m;[0m                           [92;1m376 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-start[0m[92m:[0m[92m [0m[92mauto[0m[92m;[0m
+[91;1m322 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-right[0m[91m:[0m[91m [0m[91mauto[0m[91m;[0m                          [92;1m377 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-end[0m[92m:[0m[92m [0m[92mauto[0m[92m;[0m
+[2m323 [0m    max-width: var(--content-max-width);         [2m378 [0m    max-width: var(--content-max-width);
+[91;1m324 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mborder-bottom[0m[91m:[0m[91m [0m[91m1px[0m[91m [0m[91mdashed[0m[91m [0m[91mvar[0m[91m([0m[91m--searchresult[0m [92;1m379 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mborder-block-end[0m[92m:[0m[92m [0m[92m1px[0m[92m [0m[92mdashed[0m[92m [0m[92mvar[0m[92m([0m[92m--searchres[0m
+[91;1m[2m... [0m[0m[91ms-border-color[0m[91m)[0m[91m;[0m                                 [92;1m[2m... [0m[0m[92mults-border-color[0m[92m)[0m[92m;[0m
+[2m325 [0m}                                                [2m380 [0m}
+[2m326 [0m                                                 [2m381 [0m
+[2m327 [0mul#searchresults {                               [2m382 [0mul#searchresults {
+[2m328 [0m    list-style: none;                            [2m383 [0m    list-style: none;
+[91;1m329 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mpadding-left[0m[91m:[0m[91m [0m[91m20px[0m[91m;[0m                          [92;1m384 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mpadding-inline-start[0m[92m:[0m[92m [0m[92m20px[0m[92m;[0m
+[2m330 [0m}                                                [2m385 [0m}
+[2m331 [0mul#searchresults li {                            [2m386 [0mul#searchresults li {
+[2m332 [0m    margin: 10px 0px;                            [2m387 [0m    margin: 10px 0px;
+
+[1mcss/chrome.css[0m[2m --- 15/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m339 [0mul#searchresults span.teaser {                   [2m394 [0mul#searchresults span.teaser {
+[2m340 [0m    display: block;                              [2m395 [0m    display: block;
+[2m341 [0m    clear: both;                                 [2m396 [0m    clear: both;
+[91;1m342 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin[0m[91m:[0m[91m [0m[91m5px[0m[91m [0m[91;1m0[0m[91m [0m[91m0[0m[91m [0m[91m20px[0m[91m;[0m                        [92;1m397 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-block-start[0m[92m:[0m[92m [0m[92m5px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m398 [0m[92m [0m[92m [0m[92;1m [0m[92;1m [0m[92;1mmargin-block-end[0m[92;1m:[0m[92;1m [0m[92m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m399 [0m[92m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-start[0m[92;1m:[0m[92;1m [0m[92m20px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m400 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-end[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92m;[0m
+[2m343 [0m    font-size: 0.8em;                            [2m401 [0m    font-size: 0.8em;
+[2m344 [0m}                                                [2m402 [0m}
+[2m345 [0mul#searchresults span.teaser em {                [2m403 [0mul#searchresults span.teaser em {
+
+[1mcss/chrome.css[0m[2m --- 16/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m362 [0m    background-color: var(--sidebar-bg);         [2m420 [0m    background-color: var(--sidebar-bg);
+[2m363 [0m    color: var(--sidebar-fg);                    [2m421 [0m    color: var(--sidebar-fg);
+[2m364 [0m}                                                [2m422 [0m}
+[2m... [0m                                                 [92;1m423 [0m[92;1m.[0m[92;1msidebar-iframe-inner[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m424 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m--padding[0m[92;1m:[0m[92;1m [0m[92;1m10px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m425 [0m
+[2m... [0m                                                 [92;1m426 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbackground-color[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-bg[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m427 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mpadding[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--padding[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m428 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m429 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mfont-size[0m[92;1m:[0m[92;1m [0m[92;1m1[0m[92;1m.[0m[92;1m4rem[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m430 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mcolor[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-fg[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m431 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmin-height[0m[92;1m:[0m[92;1m [0m[92;1mcalc[0m[92;1m([0m[92;1m100vh[0m[92;1m [0m[92;1m-[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--padding[0m[92;1m)[0m[92;1m [0m[92;1m*[0m[92;1m [0m[92;1m2[0m[92;1m)[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m432 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m433 [0m[92;1m.[0m[92;1msidebar-iframe-outer[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m434 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder[0m[92;1m:[0m[92;1m [0m[92;1mnone[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m435 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mheight[0m[92;1m:[0m[92;1m [0m[92;1m100[0m[92;1m%[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m436 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mposition[0m[92;1m:[0m[92;1m [0m[92;1mabsolute[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m437 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mtop[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m438 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbottom[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m439 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mleft[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m440 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mright[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m441 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m442 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m.[0m[92;1msidebar[0m[92;1m [0m[92;1m{[0m[92;1m [0m[92;1mleft[0m[92;1m:[0m[92;1m [0m[92;1munset[0m[92;1m;[0m[92;1m [0m[92;1mright[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m[92;1m [0m[92;1m}[0m
+[2m365 [0m.sidebar-resizing {                              [2m443 [0m.sidebar-resizing {
+[2m366 [0m    -moz-user-select: none;                      [2m444 [0m    -moz-user-select: none;
+[2m367 [0m    -webkit-user-select: none;                   [2m445 [0m    -webkit-user-select: none;
+[2m368 [0m    -ms-user-select: none;                       [2m446 [0m    -ms-user-select: none;
+[2m369 [0m    user-select: none;                           [2m447 [0m    user-select: none;
+[2m370 [0m}                                                [2m448 [0m}
+[91;1m371 [0m[91;1m.[0m[91;1mjs[0m[91m:[0m[91mnot[0m[91m([0m[91m.[0m[91msidebar-resizing[0m[91m)[0m[91m [0m[91m.[0m[91msidebar[0m[91m [0m[91m{[0m            [92;1m449 [0m[92;1mhtml[0m[92m:[0m[92mnot[0m[92m([0m[92m.[0m[92msidebar-resizing[0m[92m)[0m[92m [0m[92m.[0m[92msidebar[0m[92m [0m[92m{[0m
+[2m372 [0m    transition: transform 0.3s; /* Animation: sl [2m450 [0m    transition: transform 0.3s; /* Animation: sl
+[2m[2m... [0m[0mide away */                                      [2m[2m... [0m[0mide away */
+[2m373 [0m}                                                [2m451 [0m}
+[2m374 [0m.sidebar code {                                  [2m452 [0m.sidebar code {
+
+[1mcss/chrome.css[0m[2m --- 17/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m387 [0m    position: absolute;                          [2m465 [0m    position: absolute;
+[2m388 [0m    cursor: col-resize;                          [2m466 [0m    cursor: col-resize;
+[2m389 [0m    width: 0;                                    [2m467 [0m    width: 0;
+[91;1m390 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mright[0m[91m:[0m[91m [0m[91;1m0[0m[91m;[0m                                    [92;1m468 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mright[0m[92m:[0m[92m [0m[92;1mcalc[0m[92;1m([0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-w[0m
+[91;1m[2m... [0m[0m                                                 [92;1m[2m... [0m[0m[92;1midth[0m[92;1m)[0m[92;1m [0m[92;1m*[0m[92;1m [0m[92;1m-1[0m[92;1m)[0m[92m;[0m
+[2m391 [0m    top: 0;                                      [2m469 [0m    top: 0;
+[2m392 [0m    bottom: 0;                                   [2m470 [0m    bottom: 0;
+[2m... [0m                                                 [92;1m471 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mdisplay[0m[92;1m:[0m[92;1m [0m[92;1mflex[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m472 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1malign-items[0m[92;1m:[0m[92;1m [0m[92;1mcenter[0m[92;1m;[0m
+[2m393 [0m}                                                [2m473 [0m}
+[2m... [0m                                                 [92;1m474 [0m
+[2m... [0m                                                 [92;1m475 [0m[92;1m.[0m[92;1msidebar-resize-handle[0m[92;1m [0m[92;1m.[0m[92;1msidebar-resize-indicator[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m476 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mwidth[0m[92;1m:[0m[92;1m [0m[92;1m100[0m[92;1m%[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m477 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mheight[0m[92;1m:[0m[92;1m [0m[92;1m16px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m478 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mcolor[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--icons[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m479 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin-inline-start[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-in[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mdicator-space[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m480 [0m[92;1m    [0m[92;1mdisplay[0m[92;1m:[0m[92;1m [0m[92;1mflex[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m481 [0m[92;1m    [0m[92;1malign-items[0m[92;1m:[0m[92;1m [0m[92;1mcenter[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m482 [0m[92;1m    [0m[92;1mjustify-content[0m[92;1m:[0m[92;1m [0m[92;1mflex-start[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m483 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m484 [0m[92;1m.[0m[92;1msidebar-resize-handle[0m[92;1m [0m[92;1m.[0m[92;1msidebar-resize-indicator[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m:[0m[92;1m:[0m[92;1mbefore[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m485 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mcontent[0m[92;1m:[0m[92;1m [0m[92;1m"[0m[92;1m"[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m486 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mwidth[0m[92;1m:[0m[92;1m [0m[92;1m2px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m487 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mheight[0m[92;1m:[0m[92;1m [0m[92;1m12px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m488 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder-left[0m[92;1m:[0m[92;1m [0m[92;1mdotted[0m[92;1m [0m[92;1m2px[0m[92;1m [0m[92;1mcurrentColor[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m489 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m490 [0m[92;1m.[0m[92;1msidebar-resize-handle[0m[92;1m [0m[92;1m.[0m[92;1msidebar-resize-indicator[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m:[0m[92;1m:[0m[92;1mafter[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m491 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mcontent[0m[92;1m:[0m[92;1m [0m[92;1m"[0m[92;1m"[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m492 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mwidth[0m[92;1m:[0m[92;1m [0m[92;1m2px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m493 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mheight[0m[92;1m:[0m[92;1m [0m[92;1m16px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m494 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder-left[0m[92;1m:[0m[92;1m [0m[92;1mdotted[0m[92;1m [0m[92;1m2px[0m[92;1m [0m[92;1mcurrentColor[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m495 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m496 [0m
+[2m... [0m                                                 [92;1m497 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m.[0m[92;1msidebar[0m[92;1m [0m[92;1m.[0m[92;1msidebar-resize-handle[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m498 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mleft[0m[92;1m:[0m[92;1m [0m[92;1mcalc[0m[92;1m([0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-wi[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mdth[0m[92;1m)[0m[92;1m [0m[92;1m*[0m[92;1m [0m[92;1m-1[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m499 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mright[0m[92;1m:[0m[92;1m [0m[92;1munset[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m500 [0m[92;1m}[0m
+[2m394 [0m.js .sidebar .sidebar-resize-handle {            [2m501 [0m.js .sidebar .sidebar-resize-handle {
+[2m395 [0m    cursor: col-resize;                          [2m502 [0m    cursor: col-resize;
+[91;1m396 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mwidth[0m[91m:[0m[91m [0m[91;1m5px[0m[91m;[0m                                  [92;1m503 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mwidth[0m[92m:[0m[92m [0m[92;1mcalc[0m[92;1m([0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-w[0m
+[91;1m[2m... [0m[0m                                                 [92;1m[2m... [0m[0m[92;1midth[0m[92;1m)[0m[92;1m [0m[92;1m-[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-space[0m[92;1m)[0m[92;1m)[0m[92m;[0m
+[2m397 [0m}                                                [2m504 [0m}
+[91;1m398 [0m[91;1m.[0m[91msidebar-hidden[0m[91m [0m[91m.[0m[91msidebar[0m[91m [0m[91m{[0m                       [92;1m505 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92msidebar-hidden[0m[92m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m506 [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mnot[0m[92;1m([0m[92;1m:[0m[92;1mchecked[0m[92;1m)[0m[92;1m [0m[92;1m~[0m[92;1m [0m[92m.[0m[92msidebar[0m[92m [0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92m{[0m
+[91;1m399 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mtransform[0m[91m:[0m[91m [0m[91mtranslateX[0m[91m([0m[91mcalc[0m[91m([0m[91m0px[0m[91m [0m[91m-[0m[91m [0m[91mvar[0m[91m([0m[91m--sideb[0m [92;1m507 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mtransform[0m[92m:[0m[92m [0m[92mtranslateX[0m[92m([0m[92mcalc[0m[92m([0m[92m0px[0m[92m [0m[92m-[0m[92m [0m[92mvar[0m[92m([0m[92m--sideb[0m
+[91;1m[2m... [0m[0m[91mar-width[0m[91m)[0m[91m)[0m[91m)[0m[91m;[0m                                     [92;1m[2m... [0m[0m[92mar-width[0m[92m)[0m[92;1m [0m[92;1m-[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-width[0m
+[91;1m[2m... [0m[0m                                                 [92;1m[2m... [0m[0m[92m)[0m[92m)[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m508 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mz-index[0m[92;1m:[0m[92;1m [0m[92;1m-1[0m[92m;[0m
+[2m400 [0m}                                                [2m509 [0m}
+[2m... [0m                                                 [92;1m510 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mnot[0m[92;1m([0m[92;1m:[0m[92;1mchecked[0m[92;1m)[0m[92;1m [0m[92;1m~[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m [0m[92;1m.[0m[92;1msidebar[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m511 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mtransform[0m[92;1m:[0m[92;1m [0m[92;1mtranslateX[0m[92;1m([0m[92;1mcalc[0m[92;1m([0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-wid[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mth[0m[92;1m)[0m[92;1m [0m[92;1m+[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-width[0m[92;1m)[0m[92;1m)[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m512 [0m[92;1m}[0m
+[2m401 [0m.sidebar::-webkit-scrollbar {                    [2m513 [0m.sidebar::-webkit-scrollbar {
+[2m402 [0m    background: var(--sidebar-bg);               [2m514 [0m    background: var(--sidebar-bg);
+[2m403 [0m}                                                [2m515 [0m}
+[2m404 [0m.sidebar::-webkit-scrollbar-thumb {              [2m516 [0m.sidebar::-webkit-scrollbar-thumb {
+[2m405 [0m    background: var(--scrollbar);                [2m517 [0m    background: var(--scrollbar);
+[2m406 [0m}                                                [2m518 [0m}
+[2m407 [0m                                                 [2m519 [0m
+[91;1m408 [0m[91;1m.[0m[91msidebar-visible[0m[91m [0m[91m.[0m[91mpage-wrapper[0m[91m [0m[91m{[0m                 [92;1m520 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92msidebar-visible[0m[92m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m521 [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mchecked[0m[92;1m [0m[92;1m~[0m[92;1m [0m[92m.[0m[92mpage-wrapper[0m[92m [0m[92m{[0m
+[91;1m409 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mtransform[0m[91m:[0m[91m [0m[91mtranslateX[0m[91m([0m[91mvar[0m[91m([0m[91m--sidebar-width[0m[91m)[0m[91m)[0m[91m;[0m [92;1m522 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mtransform[0m[92m:[0m[92m [0m[92mtranslateX[0m[92m([0m[92;1mcalc[0m[92;1m([0m[92mvar[0m[92m([0m[92m--sidebar-wid[0m
+[91;1m[2m... [0m[0m                                                 [92;1m[2m... [0m[0m[92mth[0m[92;1m)[0m[92;1m [0m[92;1m+[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-width[0m[92;1m)[0m[92m)[0m[92m)[0m[92m;[0m
+[2m410 [0m}                                                [2m523 [0m}
+[2m... [0m                                                 [92;1m524 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mchecked[0m[92;1m [0m[92;1m~[0m[92;1m [0m[92;1m.[0m[92;1mpage[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m-wrapper[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m525 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mtransform[0m[92;1m:[0m[92;1m [0m[92;1mtranslateX[0m[92;1m([0m[92;1mcalc[0m[92;1m([0m[92;1m0px[0m[92;1m [0m[92;1m-[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sideb[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mar-width[0m[92;1m)[0m[92;1m [0m[92;1m-[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-width[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m)[0m[92;1m)[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m526 [0m[92;1m}[0m
+[2m411 [0m@media only screen and (min-width: 620px) {      [2m527 [0m@media only screen and (min-width: 620px) {
+[91;1m412 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1m.[0m[91;1msidebar-visible[0m[91m [0m[91m.[0m[91mpage-wrapper[0m[91m [0m[91m{[0m             [92;1m528 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mchecked[0m[92;1m [0m[92;1m~[0m[92m [0m[92m.[0m[92mpage-wrapp[0m
+[91;1m[2m... [0m[0m                                                 [92;1m[2m... [0m[0m[92mer[0m[92m [0m[92m{[0m
+[2m413 [0m        transform: none;                         [2m529 [0m        transform: none;
+[91;1m414 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-left[0m[91m:[0m[91m [0m[91mvar[0m[91m([0m[91m--sidebar-width[0m[91m)[0m[91m;[0m       [92;1m530 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-start[0m[92m:[0m[92m [0m[92;1mcalc[0m[92;1m([0m[92mvar[0m[92m([0m[92m--sidebar-[0m
+[91;1m[2m... [0m[0m                                                 [92;1m[2m... [0m[0m[92mwidth[0m[92;1m)[0m[92;1m [0m[92;1m+[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--sidebar-resize-indicator-width[0m[92;1m)[0m[92m)[0m[92m;[0m
+[2m415 [0m    }                                            [2m531 [0m    }
+[2m... [0m                                                 [92;1m532 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m#[0m[92;1msidebar-toggle-anchor[0m[92;1m:[0m[92;1mchecked[0m[92;1m [0m[92;1m~[0m[92;1m [0m[92;1m.[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mpage-wrapper[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m533 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mtransform[0m[92;1m:[0m[92;1m [0m[92;1mnone[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m534 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m}[0m
+[2m416 [0m}                                                [2m535 [0m}
+[2m417 [0m                                                 [2m536 [0m
+[2m418 [0m.chapter {                                       [2m537 [0m.chapter {
+[2m419 [0m    list-style: none outside none;               [2m538 [0m    list-style: none outside none;
+[91;1m420 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mpadding-left[0m[91m:[0m[91m [0m[91m0[0m[91m;[0m                             [92;1m539 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mpadding-inline-start[0m[92m:[0m[92m [0m[92m0[0m[92m;[0m
+[2m421 [0m    line-height: 2.2em;                          [2m540 [0m    line-height: 2.2em;
+[2m422 [0m}                                                [2m541 [0m}
+[2m423 [0m                                                 [2m542 [0m
+
+[1mcss/chrome.css[0m[2m --- 18/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m447 [0m.chapter li > a.toggle {                         [2m566 [0m.chapter li > a.toggle {
+[2m448 [0m    cursor: pointer;                             [2m567 [0m    cursor: pointer;
+[2m449 [0m    display: block;                              [2m568 [0m    display: block;
+[91;1m450 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-left[0m[91m:[0m[91m [0m[91mauto[0m[91m;[0m                           [92;1m569 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-start[0m[92m:[0m[92m [0m[92mauto[0m[92m;[0m
+[2m451 [0m    padding: 0 10px;                             [2m570 [0m    padding: 0 10px;
+[2m452 [0m    user-select: none;                           [2m571 [0m    user-select: none;
+[2m453 [0m    opacity: 0.68;                               [2m572 [0m    opacity: 0.68;
+
+[1mcss/chrome.css[0m[2m --- 19/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m464 [0m                                                 [2m583 [0m
+[2m465 [0m.chapter li.chapter-item {                       [2m584 [0m.chapter li.chapter-item {
+[2m466 [0m    line-height: 1.5em;                          [2m585 [0m    line-height: 1.5em;
+[91;1m467 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-top[0m[91m:[0m[91m [0m[91m0[0m[91m.[0m[91m6em[0m[91m;[0m                           [92;1m586 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-block-start[0m[92m:[0m[92m [0m[92m0[0m[92m.[0m[92m6em[0m[92m;[0m
+[2m468 [0m}                                                [2m587 [0m}
+[2m469 [0m                                                 [2m588 [0m
+[2m470 [0m.chapter li.expanded > a.toggle div {            [2m589 [0m.chapter li.expanded > a.toggle div {
+
+[1mcss/chrome.css[0m[2m --- 20/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m487 [0m                                                 [2m606 [0m
+[2m488 [0m.section {                                       [2m607 [0m.section {
+[2m489 [0m    list-style: none outside none;               [2m608 [0m    list-style: none outside none;
+[91;1m490 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mpadding-left[0m[91m:[0m[91m [0m[91m20px[0m[91m;[0m                          [92;1m609 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mpadding-inline-start[0m[92m:[0m[92m [0m[92m20px[0m[92m;[0m
+[2m491 [0m    line-height: 1.9em;                          [2m610 [0m    line-height: 1.9em;
+[2m492 [0m}                                                [2m611 [0m}
+[2m493 [0m                                                 [2m612 [0m
+
+[1mcss/chrome.css[0m[2m --- 21/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m510 [0m[2m629 [0m    /* Don't let the children's background extend past the rounded corners. */
+[2m511 [0m[2m630 [0m    overflow: hidden;
+[2m512 [0m[2m631 [0m}
+[2m... [0m[92;1m632 [0m[92;1m[[0m[92;1mdir[0m[92;1m=[0m[92;1mrtl[0m[92;1m][0m[92;1m [0m[92;1m.[0m[92;1mtheme-popup[0m[92;1m [0m[92;1m{[0m[92;1m [0m[92;1mleft[0m[92;1m:[0m[92;1m [0m[92;1munset[0m[92;1m;[0m[92;1m [0m[92;1m [0m[92;1mright[0m[92;1m:[0m[92;1m [0m[92;1m10px[0m[92;1m;[0m[92;1m [0m[92;1m}[0m
+[2m513 [0m[2m633 [0m.theme-popup .default {
+[2m514 [0m[2m634 [0m    color: var(--icons);
+[2m515 [0m[2m635 [0m}
+
+[1mcss/chrome.css[0m[2m --- 22/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m520 [0m    padding: 2px 20px;                           [2m640 [0m    padding: 2px 20px;
+[2m521 [0m    line-height: 25px;                           [2m641 [0m    line-height: 25px;
+[2m522 [0m    white-space: nowrap;                         [2m642 [0m    white-space: nowrap;
+[91;1m523 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91mtext-align[0m[91m:[0m[91m [0m[91;1mleft[0m[91m;[0m                            [92;1m643 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92mtext-align[0m[92m:[0m[92m [0m[92;1mstart[0m[92m;[0m
+[2m524 [0m    cursor: pointer;                             [2m644 [0m    cursor: pointer;
+[2m525 [0m    color: inherit;                              [2m645 [0m    color: inherit;
+[2m526 [0m    background: inherit;                         [2m646 [0m    background: inherit;
+
+[1mcss/chrome.css[0m[2m --- 23/23 --- Text (13 CSS parse errors, exceeded DFT_PARSE_ERROR_LIMIT)[0m
+[2m533 [0m.theme-selected::before {                        [2m653 [0m.theme-selected::before {
+[2m534 [0m    display: inline-block;                       [2m654 [0m    display: inline-block;
+[2m535 [0m    content: "✓";                                [2m655 [0m    content: "✓";
+[91;1m536 [0m[91m [0m[91m [0m[91m [0m[91m [0m[91;1mmargin-left[0m[91m:[0m[91m [0m[91m-14px[0m[91m;[0m                          [92;1m656 [0m[92m [0m[92m [0m[92m [0m[92m [0m[92;1mmargin-inline-start[0m[92m:[0m[92m [0m[92m-14px[0m[92m;[0m
+[2m537 [0m    width: 14px;                                 [2m657 [0m    width: 14px;
+[2m... [0m                                                 [92;1m658 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m659 [0m
+[2m... [0m                                                 [92;1m660 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mThe[0m[92;1m [0m[92;1mcontainer[0m[92;1m [0m[92;1mfor[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mhelp[0m[92;1m [0m[92;1mpopup[0m[92;1m [0m[92;1mthat[0m[92;1m [0m[92;1mcovers[0m[92;1m [0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mthe[0m[92;1m [0m[92;1mwhole[0m[92;1m [0m[92;1mwindow[0m[92;1m.[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m661 [0m[92;1m#[0m[92;1mmdbook-help-container[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m662 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mPosition[0m[92;1m [0m[92;1mand[0m[92;1m [0m[92;1msize[0m[92;1m [0m[92;1mfor[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mwhole[0m[92;1m [0m[92;1mwindow[0m[92;1m.[0m[92;1m [0m[92;1m*[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m663 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mposition[0m[92;1m:[0m[92;1m [0m[92;1mfixed[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m664 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mtop[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m665 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mleft[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m666 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mright[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m667 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbottom[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m668 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mThis[0m[92;1m [0m[92;1muses[0m[92;1m [0m[92;1mflex[0m[92;1m [0m[92;1mlayout[0m[92;1m [0m[92;1m([0m[92;1mwhich[0m[92;1m [0m[92;1mis[0m[92;1m [0m[92;1mset[0m[92;1m [0m[92;1min[0m[92;1m [0m[92;1mbo[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mok[0m[92;1m.[0m[92;1mjs[0m[92;1m)[0m[92;1m,[0m[92;1m [0m[92;1mand[0m[92;1m [0m[92;1mcenters[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mpopup[0m
+[2m... [0m                                                 [92;1m669 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1min[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mwindow[0m[92;1m.[0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m670 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mdisplay[0m[92;1m:[0m[92;1m [0m[92;1mnone[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m671 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1malign-items[0m[92;1m:[0m[92;1m [0m[92;1mcenter[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m672 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mjustify-content[0m[92;1m:[0m[92;1m [0m[92;1mcenter[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m673 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mz-index[0m[92;1m:[0m[92;1m [0m[92;1m1000[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m674 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mDim[0m[92;1m [0m[92;1mout[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mbook[0m[92;1m [0m[92;1mwhile[0m[92;1m [0m[92;1mthe[0m[92;1m [0m[92;1mpopup[0m[92;1m [0m[92;1mis[0m[92;1m [0m[92;1mvisib[0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1mle[0m[92;1m.[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m675 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbackground[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--overlay-bg[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m676 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m677 [0m
+[2m... [0m                                                 [92;1m678 [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mThe[0m[92;1m [0m[92;1mpopup[0m[92;1m [0m[92;1mhelp[0m[92;1m [0m[92;1mbox[0m[92;1m.[0m[92;1m [0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m679 [0m[92;1m#[0m[92;1mmdbook-help-popup[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m680 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbox-shadow[0m[92;1m:[0m[92;1m [0m[92;1m0[0m[92;1m [0m[92;1m4px[0m[92;1m [0m[92;1m24px[0m[92;1m [0m[92;1mrgba[0m[92;1m([0m[92;1m0[0m[92;1m,[0m[92;1m0[0m[92;1m,[0m[92;1m0[0m[92;1m,[0m[92;1m0[0m[92;1m.[0m[92;1m15[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m681 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmin-width[0m[92;1m:[0m[92;1m [0m[92;1m300px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m682 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmax-width[0m[92;1m:[0m[92;1m [0m[92;1m500px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m683 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mwidth[0m[92;1m:[0m[92;1m [0m[92;1m100[0m[92;1m%[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m684 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbox-sizing[0m[92;1m:[0m[92;1m [0m[92;1mborder-box[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m685 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mdisplay[0m[92;1m:[0m[92;1m [0m[92;1mflex[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m686 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mflex-direction[0m[92;1m:[0m[92;1m [0m[92;1mcolumn[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m687 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1malign-items[0m[92;1m:[0m[92;1m [0m[92;1mcenter[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m688 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mbackground-color[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--bg[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m689 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mcolor[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--fg[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m690 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder-width[0m[92;1m:[0m[92;1m [0m[92;1m1px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m691 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder-color[0m[92;1m:[0m[92;1m [0m[92;1mvar[0m[92;1m([0m[92;1m--theme-popup-border[0m[92;1m)[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m692 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder-style[0m[92;1m:[0m[92;1m [0m[92;1msolid[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m693 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mborder-radius[0m[92;1m:[0m[92;1m [0m[92;1m8px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m694 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mpadding[0m[92;1m:[0m[92;1m [0m[92;1m10px[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m695 [0m[92;1m}[0m
+[2m... [0m                                                 [92;1m696 [0m
+[2m... [0m                                                 [92;1m697 [0m[92;1m.[0m[92;1mmdbook-help-title[0m[92;1m [0m[92;1m{[0m
+[2m... [0m                                                 [92;1m698 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mtext-align[0m[92;1m:[0m[92;1m [0m[92;1mcenter[0m[92;1m;[0m
+[2m... [0m                                                 [92;1m699 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m/[0m[92;1m*[0m[92;1m [0m[92;1mmdbook[0m[92;1m'[0m[92;1ms[0m[92;1m [0m[92;1mmargin[0m[92;1m [0m[92;1mfor[0m[92;1m [0m[92;1mh2[0m[92;1m [0m[92;1mis[0m[92;1m [0m[92;1mway[0m[92;1m [0m[92;1mtoo[0m[92;1m [0m[92;1mlarge[0m[92;1m.[0m[92;1m [0m
+[2m... [0m                                                 [92;1m[2m... [0m[0m[92;1m*[0m[92;1m/[0m
+[2m... [0m                                                 [92;1m700 [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1m [0m[92;1mmargin[0m[92;1m:[0m[92;1m [0m[92;1m10px[0m[92;1m;[0m
+[2m538 [0m}                                                [2m701 [0m}
+

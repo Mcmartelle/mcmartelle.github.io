@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Active Recall JS - Matthew C. Martelle</title>
+        <title>On Notes and To Do Lists - Matthew C. Martelle</title>
 
 
         <!-- Custom HTML head -->
@@ -166,22 +166,139 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="active-recall-js"><a class="header" href="#active-recall-js">Active Recall JS</a></h1>
-<p><a href="https://activerecall.study" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/active_recall_js" title="" target="_blank">GitHub</a></p>
-<p>An interactive auditory flash card system with spoken prompts using the text to speech features of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API" title="" target="_blank">Web Speech API</a></p>
-<p><img src="assets/active_recall_screenshot.png" alt="screenshot of activerecall.study" /></p>
-<p>Inspired by the <a href="https://en.wikipedia.org/wiki/Anki_(software)" title="" target="_blank">Anki</a> flash card system.</p>
-<p>Made with <a href="https://mithril.js.org/index.html" title="" target="_blank">MithrilJS</a></p>
+                        <h1 id="on-notes-and-to-do-lists"><a class="header" href="#on-notes-and-to-do-lists">On Notes and To Do Lists</a></h1>
+<h2 id="tldr"><a class="header" href="#tldr">TL;DR</a></h2>
+<p>I went from the regular Kanban pattern of <code>ToDo -&gt; Doing -&gt; Done</code> in a web-app to <code>Collected -&gt; Filtered -&gt; Sorted -&gt; Done</code> using local files in a domain specific language with the file extension <code>.oats</code>.</p>
+<p><img src="./assets/brother-may-i-have-some-oats.jpg" alt="brother may I have your oats" /></p>
+<h2 id="kanban"><a class="header" href="#kanban">Kanban</a></h2>
+<p>In an effort to combat the friction of context switching between tasks I started taking notes using a simple form of Kanban (ToDo, Doing, Done) that I could nest inside of itself as needed. So large tasks that needed to be broken up into subtasks would get a new instance of Kanban inside of the large task.</p>
+<h2 id="workflowy"><a class="header" href="#workflowy">WorkFlowy</a></h2>
+<p>The best software I found for this task was WorkFlowy. It has virturally infinite nesting of nodes. (I don’t use WorkFlowy anymore, but it was a formative stepping stone)</p>
+<p>This is a project with nested Kanban in WorkFlowy.</p>
+<p><img src="./assets/nested-kanban-project.png" alt="screenshot of workflowy with a nested Kanban structure" /></p>
+<p>Clicking on a child node <code>Big Task that needs to be broken down into parts</code> navigates to a new page where that node is now the main parent node.</p>
+<p><img src="./assets/nested-kanban-big-task.png" alt="screenshot of workflowy with a nested Kanban structure" /></p>
+<h2 id="brainstorming"><a class="header" href="#brainstorming">Brainstorming</a></h2>
+<p>Sometimes I wanted to do some brainstorming and record it within the nested Kanban structure. I started by adding a brainstorm node in the notes section.</p>
+<ul>
+<li>Notes
+<ul>
+<li>Brainstorm
+<ul>
+<li>Curated
+<ul>
+<li>Brainstorm item that I actually liked</li>
+</ul>
+</li>
+<li>Aggregated
+<ul>
+<li>Brainstormed item A</li>
+<li>Brainstormed item B</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ToDo
+<ul>
+<li>Next most important item.</li>
+</ul>
+</li>
+<li>Doing
+<ul>
+<li>Currently working on this item.</li>
+</ul>
+</li>
+<li>Done
+<ul>
+<li>Already did this.</li>
+</ul>
+</li>
+</ul>
+<p>It proved so useful that brainstorming was soon folded into the ToDo nodes.</p>
+<ul>
+<li>Notes</li>
+<li>ToDo: Aggregated
+<ul>
+<li>Brainstormed item A</li>
+<li>Brainstormed item B</li>
+</ul>
+</li>
+<li>ToDo: Curated
+<ul>
+<li>Brainstorm item that I actually liked</li>
+<li>Next most important item.</li>
+</ul>
+</li>
+<li>Doing
+<ul>
+<li>Currently working on this item.</li>
+</ul>
+</li>
+<li>Done
+<ul>
+<li>Already did this.</li>
+</ul>
+</li>
+</ul>
+<p>By convention I would order the items in <code>ToDo: Curated</code> by priority to be easily moved down into <code>Doing</code>. This practice was codified into it’s own node, <code>Sort</code>, when I refactored the node names into more specific terms.</p>
+<ul>
+<li>Collect
+<ul>
+<li>Brainstormed item A</li>
+<li>Brainstormed item B</li>
+</ul>
+</li>
+<li>Filter
+<ul>
+<li>Brainstorm item that I actually liked</li>
+</ul>
+</li>
+<li>Sort
+<ul>
+<li>Next most important item.</li>
+</ul>
+</li>
+<li>Apply
+<ul>
+<li>Currently working on this item.</li>
+</ul>
+</li>
+<li>Done
+<ul>
+<li>Already did this.</li>
+</ul>
+</li>
+</ul>
+<h2 id="lanthir"><a class="header" href="#lanthir">Lanthir</a></h2>
+<h3 id="mermaid-js-the-complexity-extreme"><a class="header" href="#mermaid-js-the-complexity-extreme">Mermaid JS: The Complexity Extreme</a></h3>
+<p>Some time ago I made a CLI tool to follow along flow charts and prompt the user about each decision to make and action to perform. First I made it parse Mermaid.js files <code>.mmd</code> that used the <code>flowchart</code> syntax. While powerful and likely Turing complete, making .mmd files for impromptu workflows was a pain, even with the feature full <a href="https://mermaid.live/" title="" target="_blank">Mermaid Live Editor</a>.</p>
+<h3 id="txt-the-simplicity-extreme"><a class="header" href="#txt-the-simplicity-extreme">.txt: The Simplicity Extreme</a></h3>
+<p>For very simple usecases I made Lanthir parse <code>.txt</code> files one line at a time. Each line a new task to prompt the user. Simple, but often too simple.</p>
+<h3 id="oats-the-goldilocks-zone"><a class="header" href="#oats-the-goldilocks-zone">OATS: The Goldilocks Zone</a></h3>
+<p>Still quite simple but a useful middle ground. Not Turing complete. CUE Lang’s docs intrigued me when it mentioned that it is intentionally <em>not</em> Turing complete. There is less for our human brains to think about.</p>
+<p>OATS (Or And Then Sequences) only uses <code>~ &amp; | ? =</code> and newlines as special symbols, like so:</p>
+<p><img src="./assets/oats-example.png" alt="OATS example file" /></p>
+<p>Here is the CLI tool Lanthir processing the OATS file:</p>
+<p><img src="./assets/lanthir-example.png" alt="Lanthir in action" /></p>
+<p>The nested Kanban nodes in OATS.</p>
+<p><img src="./assets/oats-kanban.png" alt="Kanban in OATS" /></p>
+<p>I don’t always use Lanthir to prompt every item step by step. Just reading the OATS file on it’s own is quite easy to parse mentally. I only need to think about the items in one chunk at a time. Items outside of that chunk can be ignored as far as the decisions in OATS are concerned. In fact it is simple enough to use in written or printed form.</p>
+<pre><code>// DONE
+~ Write blog post about Lanthir and Nested Kanban.
+</code></pre>
+<p><a href="https://github.com/Mcmartelle/blog/discussions/3" title="" target="_blank">Discuss on Github</a></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="visual_metronome.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="blog.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="solunar_clock.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="2024-01-04_Utility_Lanyard.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -191,11 +308,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="visual_metronome.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="blog.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="solunar_clock.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="2024-01-04_Utility_Lanyard.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
