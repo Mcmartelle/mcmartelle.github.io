@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Active Recall JS - Matthew C. Martelle</title>
+        <title>Probably Maybe - Matthew C. Martelle</title>
 
 
         <!-- Custom HTML head -->
@@ -166,22 +166,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="active-recall-js"><a class="header" href="#active-recall-js">Active Recall JS</a></h1>
-<p><a href="https://activerecall.study" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/active_recall_js" title="" target="_blank">GitHub</a></p>
-<p>An interactive auditory flash card system with spoken prompts using the text to speech features of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API" title="" target="_blank">Web Speech API</a></p>
-<p><img src="assets/active_recall_screenshot.png" alt="screenshot of activerecall.study" /></p>
-<p>Inspired by the <a href="https://en.wikipedia.org/wiki/Anki_(software)" title="" target="_blank">Anki</a> flash card system.</p>
-<p>Made with <a href="https://mithril.js.org/index.html" title="" target="_blank">MithrilJS</a></p>
+                        <h1 id="probably-maybe"><a class="header" href="#probably-maybe">Probably Maybe</a></h1>
+<p>An Elm webpage to convert between probability representations.</p>
+<p><a href="https://www.martelle.dev/probably-maybe/" title="" target="_blank">See it here</a> | <a href="https://github.com/Mcmartelle/probably-maybe" title="" target="_blank">Github</a></p>
+<p>In high availability systems the concept of uptime in terms of <a href="https://en.wikipedia.org/wiki/High_availability#%22Nines%22" title="" target="_blank">“Nines”</a> refers to the number of nines in the uptime percentage, for example 99.999% is 5 nines. The “Nines” representation of probability is easier to understand than standard deviation or <a href="https://en.wikipedia.org/wiki/Six_Sigma" title="" target="_blank">Six Sigma</a>. However, I wanted to represent probabilities with the number of coin flips in a row, or dice rolls to meet a given probability.</p>
+<p>I assumed the math would involve a log somehow. It ended up being just one log, but the base of the log depends on the number of sides on the coin or dice. So calculating the number of rolls for a 6 sided die is log base 6 of the 1 in x chance.</p>
+<p>Another interesting probability that I added later is the number of rolls of a given 1 in x chance to have a certain chance of having at least one occurance. These number are much harder for my human brain to predict. For example it takes about 7 rolls of a 1 in 10 chance to have a 50% chance of at least 1 occurance. I would assume the number would be closer to 5 rolls, since 5 is 50% of 10, but that is not the case. It seems to be a helpful way to bridge the gap between statistics of huge sample sizes and the statistics of smaller everyday life sample sizes.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="deml.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="elm_experiments.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="solunar_clock.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="visual_metronome.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -191,11 +191,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="deml.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="elm_experiments.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="solunar_clock.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="visual_metronome.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

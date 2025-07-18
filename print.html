@@ -452,11 +452,6 @@ Add a syntax to label edges</li>
 </ul>
 <h2 id="why-though-1"><a class="header" href="#why-though-1">Why, Though?</a></h2>
 <p>I was thinking about how it’s annoying in languages like C when function declaration order matters. Then I wondered if there could be a case when it would be a nice feature for declaration order to matter and I thought of DAGs.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="visual-metronome"><a class="header" href="#visual-metronome">Visual Metronome</a></h1>
-<p>See it <a href="http://www.martelle.dev/metrognome/" title="" target="_blank">here</a> | <a href="https://github.com/Mcmartelle/metrognome" title="" target="_blank">GitHub</a></p>
-<p>Reading up on the Web Animation 2 specs I realised this visual metronome would be easy to make.</p>
-<p><img src="assets/visual_metronome.png" alt="screen shot of visual metronome" /></p>
-<p>Built in <a href="https://elm-lang.org/" title="" target="_blank">Elm</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="active-recall-js"><a class="header" href="#active-recall-js">Active Recall JS</a></h1>
 <p><a href="https://activerecall.study" title="" target="_blank">Website</a> | <a href="https://github.com/Mcmartelle/active_recall_js" title="" target="_blank">GitHub</a></p>
 <p>An interactive auditory flash card system with spoken prompts using the text to speech features of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API" title="" target="_blank">Web Speech API</a></p>
@@ -503,6 +498,28 @@ Add a syntax to label edges</li>
 <p><img src="assets/pipe_wrench.gif" alt="pixel pipe wrench animation" />
 <img src="assets/slayer_run.gif" alt="knight running" />
 <img src="assets/tomato2.png" alt="pixel art of a tomato" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="elm-experiments"><a class="header" href="#elm-experiments">Elm Experiments</a></h1>
+<p>I started using Elm in the Summer of 2024. I’ve enjoyed the strong types, good error messages, functional paradigm, and excellent API design so much that whenever an interesting idea crosses my mind I tend to explore it in Elm first.</p>
+<p>Here are some of those experiments.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="probably-maybe"><a class="header" href="#probably-maybe">Probably Maybe</a></h1>
+<p>An Elm webpage to convert between probability representations.</p>
+<p><a href="https://www.martelle.dev/probably-maybe/" title="" target="_blank">See it here</a> | <a href="https://github.com/Mcmartelle/probably-maybe" title="" target="_blank">Github</a></p>
+<p>In high availability systems the concept of uptime in terms of <a href="https://en.wikipedia.org/wiki/High_availability#%22Nines%22" title="" target="_blank">“Nines”</a> refers to the number of nines in the uptime percentage, for example 99.999% is 5 nines. The “Nines” representation of probability is easier to understand than standard deviation or <a href="https://en.wikipedia.org/wiki/Six_Sigma" title="" target="_blank">Six Sigma</a>. However, I wanted to represent probabilities with the number of coin flips in a row, or dice rolls to meet a given probability.</p>
+<p>I assumed the math would involve a log somehow. It ended up being just one log, but the base of the log depends on the number of sides on the coin or dice. So calculating the number of rolls for a 6 sided die is log base 6 of the 1 in x chance.</p>
+<p>Another interesting probability that I added later is the number of rolls of a given 1 in x chance to have a certain chance of having at least one occurance. These number are much harder for my human brain to predict. For example it takes about 7 rolls of a 1 in 10 chance to have a 50% chance of at least 1 occurance. I would assume the number would be closer to 5 rolls, since 5 is 50% of 10, but that is not the case. It seems to be a helpful way to bridge the gap between statistics of huge sample sizes and the statistics of smaller everyday life sample sizes.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="visual-metronome"><a class="header" href="#visual-metronome">Visual Metronome</a></h1>
+<p>See it <a href="http://www.martelle.dev/metrognome/" title="" target="_blank">here</a> | <a href="https://github.com/Mcmartelle/metrognome" title="" target="_blank">GitHub</a></p>
+<p>Reading up on the Web Animation 2 specs I realised this visual metronome would be easy to make.</p>
+<p><img src="assets/visual_metronome.png" alt="screen shot of visual metronome" /></p>
+<p>Built in <a href="https://elm-lang.org/" title="" target="_blank">Elm</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="reasonable-irrational-ratios"><a class="header" href="#reasonable-irrational-ratios">Reasonable Irrational Ratios</a></h1>
+<p>Exploring pseudo-random distributions between 0 and 1 with techniques described in <a href="https://www.youtube.com/watch?v=tethAU66xaA" title="" target="_blank">this talk</a> by Electronic Arts SEED about blue noise and other randomness generation methods.</p>
+<p>The histogram of the Golden Ratio is incredibly consistent, but unfortunately predictable. Blue Noise is an unpredictable alternative, with decent histogram behavior.</p>
+<p><a href="https://www.martelle.dev/reasonable-irrational-ratios/" title="" target="_blank">See it here</a> | <a href="https://github.com/mcmartelle/reasonable-irrational-ratios" title="" target="_blank">Github</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="curling"><a class="header" href="#curling">Curling</a></h1>
+<p>An exercise in minimalist game design to make a game with just 1 button for player input.</p>
+<p>Toggle the Push button on and off to get the within the target, but not past it. Hide the speed indicator for a greater challenge.</p>
+<p><a href="https://www.martelle.dev/curling/" title="" target="_blank">Play it here</a> | <a href="https://github.com/Mcmartelle/curling" title="" target="_blank">Github</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-blog-of-matthew-martelle"><a class="header" href="#the-blog-of-matthew-martelle">The blog of Matthew Martelle</a></h1>
 <h2 id="latest"><a class="header" href="#latest">Latest</a></h2>
 <p><a href="2025-07-01_on_notes_and_todo_lists.html">On Notes and To Do Lists</a></p>
